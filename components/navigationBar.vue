@@ -9,17 +9,25 @@
         <NuxtLink class="nav-top-link menuLink" to="/Contact">Contact</NuxtLink>
       </div>
       <!--menu icon if screen < sm -->
-      <div class="nav-toggle-icon-container inline-flex sm:hidden" id="navMenuIconContainer" v-on:click="sideMenu">
+      <div class="inline-flex sm:hidden" id="navMenuIconContainer" v-on:click="sideMenu">
         <img class="nav-toggle-icon" src="./../assets/icons/navbarIcon.svg" />
       </div>
+      <!-- current link if screen < sm -->
+      <h1 class="inline-flex sm:hidden">{{this.currentSite}}</h1>
     </div>
     <!--side menu -->
-    <div class="block sm:hidden" id="navSideMenu">
+    <div class="block sm:hidden navActiveSideLink" id="navSideMenu">
       <!-- links if screen < sm-->
       <div id="navSideLinksContainer">
-        <NuxtLink class="nav-side-link menuLink" to="/Projects">Projects</NuxtLink>
-        <NuxtLink class="nav-side-link menuLink" to="/About">About</NuxtLink>
-        <NuxtLink class="nav-side-link menuLink" to="/Contact">Contact</NuxtLink>
+        <NuxtLink class="nav-side-link menuLink" id="navSideLinkProjects" to="/Projects"
+          v-on:click="clickedSideMenu('/Projects')"
+        >Projects</NuxtLink>
+        <NuxtLink class="nav-side-link menuLink" id="navSideLinkAbout" to="/About"
+          v-on:click="clickedSideMenu('/About')"
+        >About</NuxtLink>
+        <NuxtLink class="nav-side-link menuLink" id="navSideLinkContact" to="/Contact"
+          v-on:click="clickedSideMenu('/Contact')"
+        >Contact</NuxtLink>
       </div>
     </div>
   </header>
@@ -30,7 +38,8 @@
     name: 'navigationBar',
     data() {
       return {
-        navSideMenuActiv: false
+        navSideMenuActiv: false,
+        currentSite: 'Projects'
       }
     },
     mounted() {
@@ -61,6 +70,8 @@
           }
         }
       })
+
+      this.sideMenuLinkFocus()
     },
     methods: {
       sideMenu() {
@@ -84,6 +95,33 @@
           icon.style.transform = "rotate(0deg)";
           icon.style.paddingTop = '12px'
         }
+      },
+      clickedSideMenu(link) {
+        if(link === '/Projects'){
+          this.currentSite = 'Projects'
+        }
+        else if(link === '/About'){
+          this.currentSite = 'About'
+        }
+        else if(link === '/Contact'){
+          this.currentSite = 'Contact'
+        }
+      },
+      sideMenuLinkFocus(){
+        if(this.currentSite === 'Projects'){
+          document.getElementById('navSideLinkProjects').style.color = '#ffe600'
+        }
+        else if(this.currentSite === 'About'){
+          document.getElementById('navSideLinkAbout').style.color = '#ffe600'
+        }
+        else if(this.currentSite === 'Contact'){
+          document.getElementById('navSideLinkContact').style.color = '#ffe600'
+        }
+      }
+    },
+    watch: {
+      currentSite: function() {
+        this.sideMenuLinkFocus()
       }
     }
   }
@@ -129,20 +167,38 @@
         }
 
 
-      .nav-toggle-icon-container {
-        z-index: 3;
+    #navMenuIconContainer {
+      z-index: 3;
 
-        height: 100%;
-        width: 64px;
+      height: 100%;
+      width: 64px;
 
-        margin-left: 8px;
-        padding: 12px;
+      margin-left: 8px;
+      padding: 12px;
 
-        transition-duration: 1s;
-      }
-      .nav-toggle-icon {
-        height: 40px;
-      }
+      transition-duration: 1s;
+    }
+    .nav-toggle-icon {
+      height: 40px;
+    }
+
+
+    h1{
+      z-index: 3;
+
+      position: absolute;
+
+      height: 100%;
+      width: 64px;
+
+      margin-left: 8px;
+
+      font-family: 'silkaregular';
+      font-size: 18px;
+      line-height: 64px;
+
+      color: white;
+    }
 
 
 
