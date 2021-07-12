@@ -4,12 +4,20 @@
     <div id="navTopMenu">
       <!-- links if screen > sm -->
       <div class="hidden sm:inline-flex" id="navTopLinksContainer">
-        <NuxtLink class="nav-top-link menuLink" to="/Projects">Projects</NuxtLink>
-        <NuxtLink class="nav-top-link menuLink" to="/About">About</NuxtLink>
-        <NuxtLink class="nav-top-link menuLink" to="/Contact">Contact</NuxtLink>
+        <NuxtLink class="nav-top-link menuLink" to="/projects"
+          v-on:click.native="sideMenu"
+        >Projects</NuxtLink>
+        <NuxtLink class="nav-top-link menuLink" to="/about"
+          v-on:click.native="sideMenu"
+        >About</NuxtLink>
+        <NuxtLink class="nav-top-link menuLink" to="/contact"
+          v-on:click.native="sideMenu"
+        >Contact</NuxtLink>
       </div>
       <!--menu icon if screen < sm -->
-      <div class="inline-flex sm:hidden" id="navMenuIconContainer" v-on:click="sideMenu">
+      <div class="inline-flex sm:hidden" id="navMenuIconContainer" 
+        v-on:click="sideMenu"
+      >
         <img class="nav-toggle-icon" src="./../assets/icons/navbarIcon.svg" />
       </div>
       <!-- current link if screen < sm -->
@@ -19,14 +27,14 @@
     <div class="block sm:hidden navActiveSideLink" id="navSideMenu">
       <!-- links if screen < sm-->
       <div id="navSideLinksContainer">
-        <NuxtLink class="nav-side-link menuLink" id="navSideLinkProjects" to="/Projects"
-          v-on:click="clickedSideMenu('/Projects')"
+        <NuxtLink class="nav-side-link menuLink" id="navSideLinkProjects" to="/projects"
+          v-on:click.native="sideMenu"
         >Projects</NuxtLink>
-        <NuxtLink class="nav-side-link menuLink" id="navSideLinkAbout" to="/About"
-          v-on:click="clickedSideMenu('/About')"
+        <NuxtLink class="nav-side-link menuLink" id="navSideLinkAbout" to="/about"
+          v-on:click.native="sideMenu"
         >About</NuxtLink>
-        <NuxtLink class="nav-side-link menuLink" id="navSideLinkContact" to="/Contact"
-          v-on:click="clickedSideMenu('/Contact')"
+        <NuxtLink class="nav-side-link menuLink" id="navSideLinkContact" to="/contact"
+          v-on:click.native="sideMenu"
         >Contact</NuxtLink>
       </div>
     </div>
@@ -39,7 +47,7 @@
     data() {
       return {
         navSideMenuActiv: false,
-        currentSite: 'Projects'
+        currentSite: this.$router.currentRoute.path
       }
     },
     mounted() {
@@ -70,8 +78,6 @@
           }
         }
       })
-
-      this.sideMenuLinkFocus()
     },
     methods: {
       sideMenu() {
@@ -95,33 +101,12 @@
           icon.style.transform = "rotate(0deg)";
           icon.style.paddingTop = '12px'
         }
-      },
-      clickedSideMenu(link) {
-        if(link === '/Projects'){
-          this.currentSite = 'Projects'
-        }
-        else if(link === '/About'){
-          this.currentSite = 'About'
-        }
-        else if(link === '/Contact'){
-          this.currentSite = 'Contact'
-        }
-      },
-      sideMenuLinkFocus(){
-        if(this.currentSite === 'Projects'){
-          document.getElementById('navSideLinkProjects').style.color = '#ffe600'
-        }
-        else if(this.currentSite === 'About'){
-          document.getElementById('navSideLinkAbout').style.color = '#ffe600'
-        }
-        else if(this.currentSite === 'Contact'){
-          document.getElementById('navSideLinkContact').style.color = '#ffe600'
-        }
       }
     },
     watch: {
-      currentSite: function() {
-        this.sideMenuLinkFocus()
+      $route: function() {
+        this.currentSite = this.$router.currentRoute.path
+        console.log("changed route to ",this.currentSite)
       }
     }
   }
@@ -162,9 +147,8 @@
         .menuLink:hover{
           color: #ffe600;
         }
-        .menuLink:active{
-          color: #ffe600;
-        }
+
+
 
 
     #navMenuIconContainer {
@@ -237,4 +221,7 @@
 
           color: white;
         }
+    a.nuxt-link-active {
+      color: #ffe600;
+    }
 </style>
