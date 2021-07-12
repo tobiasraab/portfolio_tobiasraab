@@ -14,3 +14,10 @@ export default {
     }
 }
 </script>
+<style>
+@import './../assets/fonts/fontRoman.css';
+@import './../assets/fonts/fontitalic.css';
+  body {
+    font-family: 'silkaregular';
+  }
+</style>
