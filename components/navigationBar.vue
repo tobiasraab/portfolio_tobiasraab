@@ -117,14 +117,17 @@
   header {
     display: inline-flex;
 
-    position: sticky;
-    position: -webkit-sticky;
+    position: fixed;
+    top: 0%;
 
     height: 64px;
     width: 100vw;
   }
     #navTopMenu {
       z-index: 2;
+
+      /* position: sticky;
+      position: -webkit-sticky; */
 
       width: 100%;
       height: 100%;
