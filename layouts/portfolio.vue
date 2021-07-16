@@ -22,7 +22,6 @@ export default {
   }
   .layoutNuxt {
     z-index: 1;
-    /* padding: 40px 40px; */
   }
   .nav-bar{
     z-index: 10;
