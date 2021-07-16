@@ -1,18 +1,16 @@
 <template>
-    <NuxtLink class="nuxt-link" :to="{path: this.linkedPath}">
-
-  <div class="project-card-container" @mouseenter="mouseEnter()" @mouseleave="mouseLeave()">
+  <NuxtLink class="nuxt-link" :to="{path: this.linkedPath}">
+    <div class="project-card-container" @mouseenter="mouseEnter()" @mouseleave="mouseLeave()">
       <img class="project-card-image" v-bind:src="this.image" />
       <div class="project-card-text-container pr-4 pt-11 sm:pr-4 sm:pt-10">
         <h2 class="text-xs sm:text-sm">{{this.label}}</h2>
         <h1 class="text-xl sm:text-2xl">{{this.title}}</h1>
       </div>
       <div class="project-card-hover-overlay" v-bind:id="this.overlayId">
-        <p class="project-card-hover-description" v-html="this.description"></p>
+        <p class="project-card-hover-description">{{this.description}}</p>
       </div>
-  </div>
-    </NuxtLink>
-
+    </div>
+  </NuxtLink>
 </template>
 
 <script>
@@ -32,9 +30,10 @@
 </script>
 
 <style>
-  .nuxt-link{
+  .nuxt-link {
     height: 400px;
   }
+
   .project-card-container {
     display: inline-block;
 
@@ -88,7 +87,7 @@
 
     padding: 12px;
 
-    transition-duration: 1s;
+    transition-duration: 0.6s;
     clip-path: polygon(0 78.64%, 100% 70%, 100% 100%, 0 100%);
 
     background-color: rgba(255, 230, 0, 0.8);
@@ -100,7 +99,7 @@
     padding: 2px;
 
     font-family: 'silkamedium';
-    font-size: 19px;
+    font-size: 14px;
     text-align: right;
 
     color: #0b2027;
