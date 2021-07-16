@@ -1,6 +1,6 @@
 <template>
   <div>
-    Contact
+    <p>tbs.raab@gmail.com</p>
   </div>
 </template>
 
