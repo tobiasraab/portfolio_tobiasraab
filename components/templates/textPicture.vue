@@ -1,12 +1,12 @@
 <template>
   <div class="p-12 m-auto max-w-screen-2xl">
-    <div class="textPicture-template flex flex-col md:grid gap-8 grid-cols-1 grid-rows-2 md:grid-cols-2 md:grid-rows-1"
+    <div class="textPicture-template flex flex-col-reverse md:grid gap-8 grid-cols-2 grid-rows-1"
       v-bind:style="{backgroundColor: this.backgroundColor}">
-      <figure class="row-start-2 md:row-start-1">
+      <figure class="row-start-1 col-start-2">
         <img class="textPicture-image-template" v-bind:src="this.imageSource" />
         <figcaption>{{this.imageCaption}}</figcaption>
       </figure>
-      <div class="textPicture-content-template row-start-1 md:row-start-1">
+      <div class="textPicture-content-template row-start-1 col-start-1">
         <h2>{{this.headline}}</h2>
         <p>{{this.text}}</p>
       </div>
@@ -40,14 +40,15 @@
 
   .textPicture-content-template>h2 {
     font-family: 'silkamedium';
-    font-size: 32px;
+    font-size: 26px;
     color: #061216;
 
   }
 
   .textPicture-content-template>p {
+    margin-top: 8px;
     font-family: 'silkaregular';
-    font-size: 18px;
+    font-size: 14px;
   }
 
   figcaption {
