@@ -3,7 +3,7 @@
     <projectCard
       :title="'Wärmepumpe'"
       :label="'UX/UI Design'"
-      :image="require('@/assets/images/waermepumpe/image3.png')"
+      :image="require('@/assets/images/waermepumpe/image4.png')"
       :description="'Das ist die tolle Beschreibung. Ich bin krass, gebt mir euer Geld'"
       :overlayId="'overlayId1'"
       :linkedPath="'/waermepumpe'"
