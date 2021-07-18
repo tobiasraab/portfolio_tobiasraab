@@ -4,7 +4,7 @@
       :title="'Wärmepumpe'"
       :label="'UX/UI Design'"
       :image="require('@/assets/images/waermepumpe/image4.png')"
-      :description="'Das ist die tolle Beschreibung. Ich bin krass, gebt mir euer Geld'"
+      :description="'Wärmepumpen bieten eine nachhaltige Möglichkeit das eigene Haus mit Energie zu versorgen. Die Nutzung einer Wäemepumpe bringt jedoch auch Herausforderungen mit sich. Um diese zu Überwinden wurde das folgende Dashboard entwickelt'"
       :overlayId="'overlayId1'"
       :linkedPath="'/waermepumpe'"
     ></projectCard>
