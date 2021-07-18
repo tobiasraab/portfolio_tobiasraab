@@ -42,7 +42,6 @@
     font-family: 'silkamedium';
     font-size: 26px;
     color: #061216;
-
   }
 
   .textPicture-content-template>p {
