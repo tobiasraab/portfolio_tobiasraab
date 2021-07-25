@@ -99,7 +99,7 @@
     padding: 2px;
 
     font-family: 'silkamedium';
-    font-size: 14px;
+    font-size: 18px;
     text-align: right;
 
     color: #0b2027;
