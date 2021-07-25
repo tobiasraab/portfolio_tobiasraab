@@ -26,29 +26,29 @@
       :backgroundColor="'#ffffff'"
       :imageCaption="''"
     ></pictureText>
-    <pictureTemplate class="mb-32"
+    <pictureItem class="mb-32"
       :headline="'Mid-Fi Variantenbildung'"
       :imageSource="require('@/assets/images/waermepumpe/image8.png')"
       :imageCaption="''"
-    ></pictureTemplate>
-    <pictureTemplate class="mb-32"
+    ></pictureItem>
+    <pictureItem class="mb-32"
       :headline="'High-Fi Variantenbildung'"
       :imageSource="require('@/assets/images/waermepumpe/image7.png')"
       :imageCaption="''"
-    ></pictureTemplate>
-    <pictureTemplate class="mb-32"
+    ></pictureItem>
+    <pictureItem class="mb-32"
       :headline="'Screens'"
       :imageSource="require('@/assets/images/waermepumpe/image3.png')"
       :imageCaption="''"
-    ></pictureTemplate>
+    ></pictureItem>
   </div>
 </template>
 
 <script>
-import quote from './../components/templates/quote.vue'
-import textPicture from './../components/templates/textPicture.vue'
-import pictureText from './../components/templates/pictureText.vue'
-import pictureTemplate from './../components/templates/picture.vue'
+import quote from '../../components/templates/quote.vue'
+import textPicture from '../../components/templates/textPicture.vue'
+import pictureText from '../../components/templates/pictureText.vue'
+import pictureItem from '../../components/templates/pictureItem.vue'
 
 export default {
   name: 'waermepumpe',
@@ -57,7 +57,7 @@ export default {
     quote,
     textPicture,
     pictureText,
-    pictureTemplate
+    pictureItem
   }
 }
 </script>
