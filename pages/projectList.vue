@@ -14,7 +14,7 @@
       :image="require('@/assets/images/testImg2.jpg')"
       :description="'Das ist die nächste tolle Beschreibung. Ich bin krass, gebt mir noch mehr Geld'"
       :overlayId="'overlayId2'"
-      :linkedPath="'/hubi'"
+      :linkedPath="'/projects/hubi'"
     ></projectCard>
     <projectCard
       :title="'Fire Watch'"
@@ -36,10 +36,10 @@
 </template>
 
 <script>
-import projectCard from './../components/projectCard.vue'
+import projectCard from '../components/projectCard.vue'
 
 export default {
-  name: 'projects',
+  name: 'projectList',
   layout: 'portfolio',
   components: {
     projectCard
