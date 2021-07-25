@@ -1,5 +1,16 @@
 <template>
-  <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-16 h-auto max-w-screen-2xl mt-12 m-auto">
+  <div
+    class="
+      grid grid-cols-1
+      md:grid-cols-2
+      xl:grid-cols-3
+      gap-16
+      h-auto
+      max-w-screen-2xl
+      mt-12
+      m-auto
+    "
+  >
     <projectCard
       :title="'Wärmepumpe'"
       :label="'UX/UI Design'"
@@ -8,7 +19,7 @@
       :overlayId="'overlayId1'"
       :linkedPath="'/projects/waermepumpe'"
     ></projectCard>
-     <projectCard
+    <projectCard
       :title="'HUBI - Education Kit'"
       :label="'Smart Home'"
       :image="require('@/assets/images/testImg2.jpg')"
@@ -36,17 +47,16 @@
 </template>
 
 <script>
-import projectCard from '../../components/projectCard.vue'
+import projectCard from "../../components/projectCard.vue";
 
 export default {
-  name: 'projectList',
-  layout: 'portfolio',
+  name: "projectList",
+  layout: "portfolio",
   components: {
-    projectCard
-  }
-}
+    projectCard,
+  },
+};
 </script>
 
 <style>
-
 </style>
