@@ -51,6 +51,19 @@
       }
     },
     mounted() {
+      if(this.currentSite =="/projects/waermepumpe"){
+        this.currentSite = "/projects/Wärmepumpe"
+      }
+      else if(this.currentSite =="/projects/hubi"){
+        this.currentSite = "/projects/Hubi"
+      }
+      else if(this.currentSite =="/projects/firewatch"){
+        this.currentSite = "/projects/Firewatch"
+      }
+      else if(this.currentSite =="/projects/pflege"){
+        this.currentSite = "/projects/Pflege"
+      }
+
       const icon = document.getElementById('navMenuIconContainer')
       const sideMenu = document.getElementById('navSideMenu')
       const sideMenuLinkContainer = document.getElementById('navSideLinksContainer')
@@ -106,7 +119,7 @@
     watch: {
       $route: function() {
         this.currentSite = this.$router.currentRoute.path
-        console.log("changed route to ",this.currentSite)
+        console.log("changed route to",this.currentSite)
       }
     }
   }
