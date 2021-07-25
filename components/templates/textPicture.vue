@@ -23,7 +23,7 @@
 
 </script>
 
-<style>
+<style scoped>
   .textPicture-template {
     width: 100%;
   }
@@ -40,14 +40,14 @@
 
   .textPicture-content-template>h2 {
     font-family: 'silkamedium';
-    font-size: 26px;
+    font-size: 32px;
     color: #061216;
   }
 
   .textPicture-content-template>p {
     margin-top: 8px;
     font-family: 'silkaregular';
-    font-size: 14px;
+    font-size: 18px;
   }
 
   figcaption {
