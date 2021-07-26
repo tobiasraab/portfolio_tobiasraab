@@ -23,8 +23,8 @@
 </template>
 
 <script>
-import quote from './../components/templates/quote.vue'
-import textPicture from './../components/templates/textPicture.vue'
+import quote from '../../components/templates/quote.vue'
+import textPicture from '../../components/templates/textPicture.vue'
 
 export default {
   name: 'pflege',
