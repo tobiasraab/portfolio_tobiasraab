@@ -41,6 +41,7 @@
       };
     },
     mounted() {
+      this.bigScreenCurrentSite = undefined
       if (this.currentSite == "/projects/waermepumpe") {
         this.currentSite = "/projects/Wärmepumpe";
         this.bigScreenCurrentSite = "Wärmepumpe"
@@ -113,6 +114,7 @@
     },
     watch: {
       $route: function () {
+        this.bigScreenCurrentSite = undefined
         this.currentSite = this.$router.currentRoute.path;
         console.log("changed route to", this.currentSite);
       },
