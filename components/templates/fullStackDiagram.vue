@@ -90,8 +90,8 @@ ul{
   font-family: 'silkalight';
 }
 .diagram-container {
-  margin-top: 0px;
-  position: absolute;
+  position: relative;
+  top: -6vw;
   left: 0%;
   width: 100vw;
 }
@@ -107,6 +107,8 @@ ul{
   padding: 0 48px;
   position: relative;
   z-index: 5;
+  margin-top:0;
+  margin-bottom:0;
   margin: auto;
   width: 100%;
 }
