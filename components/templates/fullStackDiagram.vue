@@ -125,13 +125,15 @@ ul{
 .line-development {
   margin-top: 8px;
   height: 1px;
-  width: 85%;
+  min-width: 85%;
+  width: calc(100% - 96px);
   background-color: black;
 }
 .line {
   margin-top: 8px;
   height: 1px;
-  width: 80%;
+  min-width: 85%;
+  width: calc(100% - 96px);
   background-color: black;
 }
 .diagram-design-container {
