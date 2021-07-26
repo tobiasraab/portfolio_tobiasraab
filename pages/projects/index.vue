@@ -11,10 +11,12 @@
       m-auto
     "
   >
+    <!--TODO: rename images seo friendly and add fill seo friendly altTags-->
     <projectCard
       :title="'Wärmepumpe'"
       :label="'UX/UI Design'"
       :image="require('@/assets/images/waermepumpe/image4.png')"
+      :altTag="'lorem ipsum'"
       :description="'Wärmepumpen bieten eine nachhaltige Möglichkeit das eigene Haus mit Energie zu versorgen. Die Nutzung einer Wäemepumpe bringt jedoch auch Herausforderungen mit sich. Um diese zu Überwinden wurde das folgende Dashboard entwickelt'"
       :overlayId="'overlayId1'"
       :linkedPath="'/projects/waermepumpe'"
