@@ -1,15 +1,19 @@
 <template>
   <div>
-    About
+    <fullStackDiagram></fullStackDiagram>
   </div>
 </template>
 
 <script>
+import fullStackDiagram from "~/components/templates/fullStackDiagram.vue";
 export default {
-  layout: 'portfolio' 
-}
+  name: "about",
+  layout: "project",
+  components: {
+    fullStackDiagram,
+  },
+};
 </script>
 
-<style>
-
+<style scoped>
 </style>
