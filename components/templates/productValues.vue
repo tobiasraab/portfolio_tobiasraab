@@ -5,7 +5,7 @@
       class="
         productValues-container
         grid
-        gap-8
+        gap-0
         grid-cols-1 grid-rows-4
         md:grid-cols-4 md:grid-rows-1
         place-items-center
@@ -44,7 +44,8 @@ export default {
   padding-bottom: 0;
 }
 .productValues-container {
-  margin: 0;
+  margin: auto;
+  padding: 0;
 }
 h1 {
   position: relative;
