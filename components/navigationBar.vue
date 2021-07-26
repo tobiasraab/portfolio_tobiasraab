@@ -9,7 +9,7 @@
           <NuxtLink class="nav-top-link menuLink" to="/about" v-on:click.native="sideMenu">About</NuxtLink>
           <NuxtLink class="nav-top-link menuLink" to="/contact" v-on:click.native="sideMenu">Contact</NuxtLink>
         </div>
-        <h3 class="navTopMenu-currentSite">{{this.bigScreenCurrentSite}}</h3>
+        <h3 class="navTopMenu-currentSite hidden md:block">{{this.bigScreenCurrentSite}}</h3>
       </div>
       <!--menu icon if screen < sm -->
       <div class="inline-flex sm:hidden" id="navMenuIconContainer" v-on:click="sideMenu">
