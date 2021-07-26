@@ -11,7 +11,7 @@
       v-bind:style="{ backgroundColor: this.backgroundColor }"
     >
       <figure class="row-start-1 col-start-1">
-        <img class="textPicture-image-template" v-bind:src="this.imageSource" />
+        <img class="textPicture-image-template" v-bind:src="this.imageSource" v-bind:alt="this.altTag" />
         <figcaption>{{ this.imageCaption }}</figcaption>
       </figure>
       <div class="textPicture-content-template row-start-1 col-start-2">
@@ -25,7 +25,7 @@
 <script>
 export default {
   name: "textPicture",
-  props: ["imageSource", "headline", "text", "backgroundColor", "imageCaption"],
+  props: ["imageSource", "headline", "text", "backgroundColor", "imageCaption", "altTag"],
 };
 </script>
 
