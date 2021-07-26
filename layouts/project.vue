@@ -1,7 +1,7 @@
 <template>
   <div>
     <navigationBar class="nav-bar"/>
-    <Nuxt class="layoutNuxt p-0 pt-12" />
+    <Nuxt class="layoutNuxt p-0 pt-24" />
   </div>
 </template>
 

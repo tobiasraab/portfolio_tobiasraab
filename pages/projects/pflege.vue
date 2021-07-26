@@ -1,6 +1,6 @@
 <template>
   <div>
-    <quote class="mt-16"
+    <quote class="mt-8"
       :backgroundColor="'#061216'"
       :color="'#ffffff'"
       :text="'Alle. Pfleger. Sind. Arm. Drann. Schock.'"

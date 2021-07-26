@@ -1,7 +1,7 @@
 <template>
   <div>
     <quote
-      class="mt-16 mb-32"
+      class="mt-8 mb-32"
       :backgroundColor="'#000000'"
       :color="'#ffffff'"
       :text="'Dashboard für Wärmepumpen'"

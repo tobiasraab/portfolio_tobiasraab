@@ -1,7 +1,7 @@
 <template>
   <div>
     <quote
-      class="mt-16 mb-32"
+      class="mt-8 mb-32"
       :backgroundColor="'#161616'"
       :color="'#ffffff'"
       :text="'Camp Creek Road Fire:<br>85 Tote'"
