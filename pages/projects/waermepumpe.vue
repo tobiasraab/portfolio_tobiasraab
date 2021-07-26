@@ -17,8 +17,8 @@
     <pictureText
       class="mb-32"
       :headline="'Energieumsatz'"
-      :imageSource="require('@/assets/images/waermepumpe/image6.png')"
-      :text="'In einer Wärmepumpe wird mittels Strom Wärmeenergie gefördert. Je mehr Wärmeenergie aus dem eingespeisten Strom resultiert, desto effizienter ist die Wärmepumpe. Die Ansicht bietet einen intuitiven und klaren Überblick über die verschiedenen Faktoren. In der oberen Hälfte der Darstellung wird der eingespeiste Strom in kWh angegeben. Dieser wird benötigt um über die Wärmepumpe Wärmeenergie aus dem Boden zu beziehen. Die Effektivität der Wärmepumpe wird in dem Faktor gemessen, um den sich die eingespeißte Energie erhöht. Dieser wird zwischen den zwei Säulendiagrammen angegeben. In der unteren Hälfte wird die gewonnene Wärmeenergie in rot visualisert.'"
+      :imageSource="require('@/assets/images/waermepumpe/image6.jpg')"
+      :text="'In einer Wärmepumpe wird mittels Strom Wärmeenergie gefördert. Je mehr Wärmeenergie aus dem eingespeisten Strom resultiert, desto effizienter ist die Wärmepumpe. Die Ansicht bietet einen intuitiven und klaren Überblick über die verschiedenen Faktoren. In der oberen Hälfte der Darstellung wird der eingespeiste Strom in kWh angegeben. Die Effektivität der Wärmepumpe wird in dem Faktor gemessen, um den sich die eingespeißte Energie erhöht. Dieser wird zwischen den zwei Säulendiagrammen angegeben. In der unteren Hälfte wird die gewonnene Wärmeenergie in rot visualisert.'"
       :backgroundColor="'#ffffff'"
       :imageCaption="''"
     ></pictureText>
