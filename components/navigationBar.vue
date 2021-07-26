@@ -3,32 +3,16 @@
     <!-- top menu -->
     <div id="navTopMenu">
       <!-- links if screen > sm -->
-      <div class="hidden sm:inline-flex" id="navTopLinksContainer">
-        <NuxtLink
-          class="nav-top-link menuLink"
-          to="/projects"
-          v-on:click.native="sideMenu"
-          >Projects</NuxtLink
-        >
-        <NuxtLink
-          class="nav-top-link menuLink"
-          to="/about"
-          v-on:click.native="sideMenu"
-          >About</NuxtLink
-        >
-        <NuxtLink
-          class="nav-top-link menuLink"
-          to="/contact"
-          v-on:click.native="sideMenu"
-          >Contact</NuxtLink
-        >
+      <div class="hidden sm:flex justify-between">
+        <div class="hidden sm:flex justify-between" id="navTopLinksContainer">
+          <NuxtLink class="nav-top-link menuLink" to="/projects" v-on:click.native="sideMenu">Projects</NuxtLink>
+          <NuxtLink class="nav-top-link menuLink" to="/about" v-on:click.native="sideMenu">About</NuxtLink>
+          <NuxtLink class="nav-top-link menuLink" to="/contact" v-on:click.native="sideMenu">Contact</NuxtLink>
+        </div>
+        <h3 class="navTopMenu-currentSite">{{this.bigScreenCurrentSite}}</h3>
       </div>
       <!--menu icon if screen < sm -->
-      <div
-        class="inline-flex sm:hidden"
-        id="navMenuIconContainer"
-        v-on:click="sideMenu"
-      >
+      <div class="inline-flex sm:hidden" id="navMenuIconContainer" v-on:click="sideMenu">
         <img class="nav-toggle-icon" src="./../assets/icons/navbarIcon.svg" />
       </div>
       <!-- current link if screen < sm -->
@@ -38,219 +22,226 @@
     <div class="block sm:hidden navActiveSideLink" id="navSideMenu">
       <!-- links if screen < sm-->
       <div id="navSideLinksContainer">
-        <NuxtLink
-          class="nav-side-link menuLink"
-          id="navSideLinkProjects"
-          to="/projects"
-          v-on:click.native="sideMenu"
-          >Projects</NuxtLink
-        >
-        <NuxtLink
-          class="nav-side-link menuLink"
-          id="navSideLinkAbout"
-          to="/about"
-          v-on:click.native="sideMenu"
-          >About</NuxtLink
-        >
-        <NuxtLink
-          class="nav-side-link menuLink"
-          id="navSideLinkContact"
-          to="/contact"
-          v-on:click.native="sideMenu"
-          >Contact</NuxtLink
-        >
+        <NuxtLink class="nav-side-link menuLink" id="navSideLinkProjects" to="/projects" v-on:click.native="sideMenu">Projects</NuxtLink>
+        <NuxtLink class="nav-side-link menuLink" id="navSideLinkAbout" to="/about" v-on:click.native="sideMenu">About</NuxtLink>
+        <NuxtLink class="nav-side-link menuLink" id="navSideLinkContact" to="/contact" v-on:click.native="sideMenu">Contact</NuxtLink>
       </div>
     </div>
   </header>
 </template>
 
 <script>
-export default {
-  name: "navigationBar",
-  data() {
-    return {
-      navSideMenuActiv: false,
-      currentSite: this.$router.currentRoute.path,
-    };
-  },
-  mounted() {
-    if (this.currentSite == "/projects/waermepumpe") {
-      this.currentSite = "/projects/Wärmepumpe";
-    } else if (this.currentSite == "/projects/hubi") {
-      this.currentSite = "/projects/Hubi";
-    } else if (this.currentSite == "/projects/firewatch") {
-      this.currentSite = "/projects/Firewatch";
-    } else if (this.currentSite == "/projects/pflege") {
-      this.currentSite = "/projects/Pflege";
-    }
-
-    const icon = document.getElementById("navMenuIconContainer");
-    const sideMenu = document.getElementById("navSideMenu");
-    const sideMenuLinkContainer = document.getElementById(
-      "navSideLinksContainer"
-    );
-
-    window.addEventListener("resize", (e) => {
-      if (window.innerWidth >= 420) {
-        this.navSideMenuActiv = false;
-
-        sideMenu.style.height = "0px";
-        sideMenuLinkContainer.style.display = "none";
-
-        icon.style.transform = "rotate(0deg)";
-        icon.style.paddingTop = "12px";
-      } else if (window.innerWidth < 420) {
-        sideMenuLinkContainer.style.display = "block";
-
-        if (this.navSideMenuActiv === false) {
-          icon.style.transform = "rotate(0deg)";
-          icon.style.paddingTop = "12px";
-        } else if (this.navSideMenuActiv === true) {
-          icon.style.transform = "rotate(90deg)";
-          icon.style.paddingTop = "16px";
-        }
+  export default {
+    name: "navigationBar",
+    data() {
+      return {
+        navSideMenuActiv: false,
+        currentSite: this.$router.currentRoute.path,
+        bigScreenCurrentSite: undefined
+      };
+    },
+    mounted() {
+      if (this.currentSite == "/projects/waermepumpe") {
+        this.currentSite = "/projects/Wärmepumpe";
+        this.bigScreenCurrentSite = "Wärmepumpe"
+      } else if (this.currentSite == "/projects/hubi") {
+        this.currentSite = "/projects/Hubi";
+        this.bigScreenCurrentSite = "HUBI"
+      } else if (this.currentSite == "/projects/firewatch") {
+        this.currentSite = "/projects/Firewatch";
+        this.bigScreenCurrentSite = "Firewatch"
+      } else if (this.currentSite == "/projects/pflege") {
+        this.currentSite = "/projects/Pflege";
+        this.bigScreenCurrentSite = "Pflege"
       }
-    });
-  },
-  methods: {
-    sideMenu() {
+      else if(this.bigScreenCurrentSite == "/projects" || "/about" || "/contact" || "/"){
+        this.bigScreenCurrentSite = ""
+      }
+
       const icon = document.getElementById("navMenuIconContainer");
       const sideMenu = document.getElementById("navSideMenu");
       const sideMenuLinkContainer = document.getElementById(
         "navSideLinksContainer"
       );
 
-      if (this.navSideMenuActiv === false) {
-        this.navSideMenuActiv = true;
+      window.addEventListener("resize", (e) => {
+        if (window.innerWidth >= 420) {
+          this.navSideMenuActiv = false;
 
-        sideMenu.style.height = window.innerHeight - 64 - 24 + "px";
+          sideMenu.style.height = "0px";
+          sideMenuLinkContainer.style.display = "none";
 
-        icon.style.transform = "rotate(90deg)";
-        icon.style.paddingTop = "16px";
-      } else if (this.navSideMenuActiv === true) {
-        this.navSideMenuActiv = false;
+          icon.style.transform = "rotate(0deg)";
+          icon.style.paddingTop = "12px";
+        } else if (window.innerWidth < 420) {
+          sideMenuLinkContainer.style.display = "block";
 
-        sideMenu.style.height = "0px";
-
-        icon.style.transform = "rotate(0deg)";
-        icon.style.paddingTop = "12px";
-      }
+          if (this.navSideMenuActiv === false) {
+            icon.style.transform = "rotate(0deg)";
+            icon.style.paddingTop = "12px";
+          } else if (this.navSideMenuActiv === true) {
+            icon.style.transform = "rotate(90deg)";
+            icon.style.paddingTop = "16px";
+          }
+        }
+      });
     },
-  },
-  watch: {
-    $route: function () {
-      this.currentSite = this.$router.currentRoute.path;
-      console.log("changed route to", this.currentSite);
+    methods: {
+      sideMenu() {
+        const icon = document.getElementById("navMenuIconContainer");
+        const sideMenu = document.getElementById("navSideMenu");
+        const sideMenuLinkContainer = document.getElementById(
+          "navSideLinksContainer"
+        );
+
+        if (this.navSideMenuActiv === false) {
+          this.navSideMenuActiv = true;
+
+          sideMenu.style.height = window.innerHeight - 64 - 24 + "px";
+
+          icon.style.transform = "rotate(90deg)";
+          icon.style.paddingTop = "16px";
+        } else if (this.navSideMenuActiv === true) {
+          this.navSideMenuActiv = false;
+
+          sideMenu.style.height = "0px";
+
+          icon.style.transform = "rotate(0deg)";
+          icon.style.paddingTop = "12px";
+        }
+      },
     },
-  },
-};
+    watch: {
+      $route: function () {
+        this.currentSite = this.$router.currentRoute.path;
+        console.log("changed route to", this.currentSite);
+      },
+    },
+  };
+
 </script>
 
 <style scoped>
-header {
-  display: inline-flex;
+  .navTopMenu-currentSite{
+    color: white;
+    font-family: "silkaregular";
+    font-size: 18px;
+    line-height: 64px;
+    margin-right: 48px;
+  }
+  header {
+    display: inline-flex;
 
-  position: fixed;
-  top: 0%;
+    position: fixed;
+    top: 0%;
 
-  height: 64px;
-  width: 100vw;
-}
-#navTopMenu {
-  z-index: 2;
+    height: 64px;
+    width: 100vw;
+  }
 
-  /* position: sticky;
+  #navTopMenu {
+    z-index: 2;
+
+    /* position: sticky;
       position: -webkit-sticky; */
 
-  width: 100%;
-  height: 100%;
+    width: 100%;
+    height: 100%;
 
-  background-color: #0b2027;
-}
-#navTopLinksContainer {
-  padding: 0 16px;
-}
-.nav-top-link {
-  height: 64px;
-  padding: 0 16px;
+    background-color: #0b2027;
+  }
 
-  font-family: "silkaregular";
-  font-size: 18px;
-  line-height: 64px;
+  #navTopLinksContainer {
+    padding: 0 16px;
+  }
 
-  color: white;
-}
-.menuLink:hover {
-  color: #ffe600;
-}
+  .nav-top-link {
+    height: 64px;
+    padding: 0 16px;
 
-#navMenuIconContainer {
-  z-index: 3;
+    font-family: "silkaregular";
+    font-size: 18px;
+    line-height: 64px;
 
-  height: 100%;
-  width: 64px;
+    color: white;
+  }
 
-  margin-left: 8px;
-  padding: 12px;
+  .menuLink:hover {
+    color: #ffe600;
+  }
 
-  transition-duration: 1s;
-}
-.nav-toggle-icon {
-  height: 40px;
-}
+  #navMenuIconContainer {
+    z-index: 3;
 
-h1 {
-  z-index: 3;
+    height: 100%;
+    width: 64px;
 
-  position: absolute;
+    margin-left: 8px;
+    padding: 12px;
 
-  height: 100%;
-  width: 64px;
+    transition-duration: 1s;
+  }
 
-  margin-left: 8px;
+  .nav-toggle-icon {
+    height: 40px;
+  }
 
-  font-family: "silkaregular";
-  font-size: 18px;
-  line-height: 64px;
+  h1 {
+    z-index: 3;
 
-  color: white;
-}
+    position: absolute;
 
-#navSideMenu {
-  position: absolute;
-  left: 0%;
-  top: 64px;
+    height: 100%;
+    width: 64px;
 
-  height: 0px;
-  width: 80vw;
+    margin-left: 8px;
 
-  transition-duration: 1s;
+    font-family: "silkaregular";
+    font-size: 18px;
+    line-height: 64px;
 
-  background-color: #0b2027;
-}
-#navSideLinksContainer {
-  z-index: 1;
-  display: block;
+    color: white;
+  }
 
-  position: absolute;
-  bottom: 0px;
+  #navSideMenu {
+    position: absolute;
+    left: 0%;
+    top: 64px;
 
-  margin-left: 24px;
-  margin-bottom: 24px;
-}
-.nav-side-link {
-  z-index: 1;
-  display: block;
+    height: 0px;
+    width: 80vw;
 
-  height: 64px;
+    transition-duration: 1s;
 
-  font-family: "silkaregular";
-  font-size: 18px;
-  line-height: 64px;
+    background-color: #0b2027;
+  }
 
-  color: white;
-}
-a.nuxt-link-active {
-  color: #ffe600;
-}
+  #navSideLinksContainer {
+    z-index: 1;
+    display: block;
+
+    position: absolute;
+    bottom: 0px;
+
+    margin-left: 24px;
+    margin-bottom: 24px;
+  }
+
+  .nav-side-link {
+    z-index: 1;
+    display: block;
+
+    height: 64px;
+
+    font-family: "silkaregular";
+    font-size: 18px;
+    line-height: 64px;
+
+    color: white;
+  }
+
+  a.nuxt-link-active {
+    color: #ffe600;
+  }
+
 </style>
