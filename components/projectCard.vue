@@ -5,7 +5,7 @@
       @mouseenter="mouseEnter()"
       @mouseleave="mouseLeave()"
     >
-      <img class="project-card-image" v-bind:src="this.image" />
+      <img class="project-card-image" v-bind:src="this.image" v-bind:alt="this.altTag"/>
       <div class="project-card-text-container pr-4 pt-11 sm:pr-4 sm:pt-10">
         <h2 class="text-xs sm:text-sm">{{ this.label }}</h2>
         <h1 class="text-xl sm:text-2xl">{{ this.title }}</h1>
@@ -20,7 +20,7 @@
 <script>
 export default {
   name: "projectCard",
-  props: ["title", "label", "image", "description", "overlayId", "linkedPath"],
+  props: ["title", "label", "image", "description", "overlayId", "linkedPath", "altTag"],
   methods: {
     mouseEnter() {
       document.getElementById(this.overlayId).style.clipPath =
