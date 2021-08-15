@@ -5,9 +5,9 @@
       <!-- links if screen > sm -->
       <div class="hidden sm:flex justify-between">
         <div class="hidden sm:flex justify-between" id="navTopLinksContainer">
-          <NuxtLink class="nav-top-link menuLink" to="/projects" v-on:click.native="sideMenu">Projects</NuxtLink>
-          <NuxtLink class="nav-top-link menuLink" to="/about" v-on:click.native="sideMenu">About</NuxtLink>
-          <NuxtLink class="nav-top-link menuLink" to="/contact" v-on:click.native="sideMenu">Contact</NuxtLink>
+          <NuxtLink class="nav-top-link menuLink" to="/">About</NuxtLink>
+          <NuxtLink class="nav-top-link menuLink projects" to="/projects">Projects</NuxtLink>
+          <NuxtLink class="nav-top-link menuLink" to="/contact">Contact</NuxtLink>
         </div>
         <h3 class="navTopMenu-currentSite hidden md:block">{{this.bigScreenCurrentSite}}</h3>
       </div>
@@ -22,9 +22,9 @@
     <div class="block sm:hidden navActiveSideLink" id="navSideMenu">
       <!-- links if screen < sm-->
       <div id="navSideLinksContainer">
-        <NuxtLink class="nav-side-link menuLink" id="navSideLinkProjects" to="/projects" v-on:click.native="sideMenu">Projects</NuxtLink>
-        <NuxtLink class="nav-side-link menuLink" id="navSideLinkAbout" to="/about" v-on:click.native="sideMenu">About</NuxtLink>
-        <NuxtLink class="nav-side-link menuLink" id="navSideLinkContact" to="/contact" v-on:click.native="sideMenu">Contact</NuxtLink>
+        <NuxtLink class="nav-side-link menuLink" id="navSideLinkAbout" to="/">About</NuxtLink>
+        <NuxtLink class="nav-side-link menuLink projects" id="navSideLinkProjects" to="/projects">Projects</NuxtLink>
+        <NuxtLink class="nav-side-link menuLink" id="navSideLinkContact" to="/contact">Contact</NuxtLink>
       </div>
     </div>
   </header>
@@ -242,7 +242,11 @@
     color: white;
   }
 
-  a.nuxt-link-active {
+  a.nuxt-link-exact-active {
+    color: #ffe600;
+  }
+
+   a.nuxt-link-active.projects {
     color: #ffe600;
   }
 

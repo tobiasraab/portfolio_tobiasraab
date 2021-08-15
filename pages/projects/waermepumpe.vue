@@ -44,8 +44,8 @@
     ></pictureItem>
     <pictureItem
       class="mb-32"
-      :headline="'Screens'"
-      :imageSource="require('@/assets/images/waermepumpe/image3.png')"
+      :headline="''"
+      :imageSource="require('@/assets/images/waermepumpe/image1.png')"
       :imageCaption="''"
     ></pictureItem>
   </div>
