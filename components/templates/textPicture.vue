@@ -4,7 +4,7 @@
       class="
         textPicture-template
         flex flex-col-reverse
-        md:grid
+        lg:grid
         gap-8
         grid-cols-2 grid-rows-1
       "
