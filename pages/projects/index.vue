@@ -33,7 +33,7 @@
       <projectCard
         :title="'Fire Watch'"
         :label="'IoT System'"
-        :image="require('@/assets/images/testImg2.jpg')"
+        :image="require('@/assets/images/firewatch/firewatch_thumbnail.jpg')"
         :description="'Das ist die nächste tolle Beschreibung. Ich bin krass, gebt mir noch mehr Geld'"
         :overlayId="'overlayId3'"
         :linkedPath="'/projects/firewatch'"
