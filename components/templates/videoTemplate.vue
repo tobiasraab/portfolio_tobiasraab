@@ -1,5 +1,5 @@
 <template>
-  <div class="p-12 m-auto max-w-screen-2xl">
+  <div class="p-12 m-auto max-w-screen-2xl video-template">
     <h2>{{ this.headline }}</h2>
     <div class="video-container">
       <iframe
@@ -22,6 +22,9 @@ export default {
 </script>
 
 <style scoped>
+.video-template {
+  z-index: 3;
+}
 h2 {
   font-family: "silkamedium";
   font-size: 32px;
@@ -36,6 +39,8 @@ h2 {
   height: 100%;
 }
 .video-container {
+  z-index: 3;
+
   position: relative;
   width: 100%;
   height: 0;
