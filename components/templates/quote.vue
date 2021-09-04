@@ -2,10 +2,6 @@
   <div>
     <div
       class="quote-container"
-      v-bind:style="{
-        backgroundColor: this.backgroundColor,
-        color: this.color,
-      }"
       v-html="this.text"
     ></div>
     <p class="quote-origin">{{ this.origin }}</p>
@@ -15,12 +11,14 @@
 <script>
 export default {
   name: "quote",
-  props: ["backgroundColor", "color", "text", "origin"],
+  props: ["text", "origin"],
 };
 </script>
 
 <style scoped>
 .quote-container {
+  z-index: 3;
+  position: relative;
   display: table-cell;
   vertical-align: middle;
 
@@ -32,6 +30,9 @@ export default {
 
   font-family: "silkalight";
   font-size: 32px;
+
+  background-color: #080808;
+  color: #ffffff;
 }
 .quote-origin {
   margin-top: 4px;
