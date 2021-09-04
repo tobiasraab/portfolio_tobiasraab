@@ -18,7 +18,6 @@ export default {
     height: 28px;
     position: relative;
     bottom: 0%;
-    z-index: 15;
     width: 100%;
     display: block;
     text-align: center;
