@@ -13,8 +13,7 @@
         require('~/assets/images/firewatch/matt-howard-eAKDzK4lo4o-unsplash.jpg')
       "
       :headline="'FireWatch'"
-      :text="'Die Anzahl der Waldbrände steigt. ein Zurückgehen der Brände ist durch den Klimawandel nicht in Sicht. Die Höhe der Gefahrenstufe für einen Waldbrand hängt von verschiedenen Faktoren ab. Zum Beispiel Bodenfeuchtigkeit, Außentemperatur, Luftfeuchtigkeit, Windgeschwindigkeit, usw. Hierfür wurde das IoT-System \'FireWatch\' entwickelt. Es handelt sich hierbei um einen voll funktionsfähigen leicht skallierbaren Produktprototypen, inclusive Sensorstationen. Das System sammelt für den Waldbrandindex relevante Daten und gibt dem Nutzer diese in einem Dashboard aus. Jeder Wald ist mit einem Registrierungscode ausgestattet, sodass der Nutzer seine gesammelten Daten über den code unkompliziert mit anderen teilen kann.'"
-      :backgroundColor="'#ffffff'"
+      :text="'Die Anzahl der Waldbrände steigt. Und ein Zurückgehen der Brände ist auf Grund des Klimawandels nicht in Sicht. Die Höhe der Gefahrenstufe für einen Waldbrand hängt von verschiedenen Faktoren ab. Zum Beispiel Bodenfeuchtigkeit, Außentemperatur, Luftfeuchtigkeit, Windgeschwindigkeit, usw. Hierfür wurde das IoT-System \'FireWatch\' entwickelt. Es handelt sich hierbei um einen voll funktionsfähigen leicht skallierbaren Produktprototypen. Das System sammelt für den Waldbrandindex relevante Daten und gibt dem Nutzer diese in einem Dashboard aus. Jeder Wald ist mit einem Registrierungscode ausgestattet, sodass der Nutzer seine im Wald gesammelten Daten unkompliziert über einen Code mit Anderen teilen kann.'"
       :imageCaption="''"
       :altTag="''"
     ></textPicture>
@@ -25,7 +24,6 @@
       "
       :headline="'FireWatch'"
       :text="'fsadfadsf'"
-      :backgroundColor="'#ffffff'"
       :imageCaption="''"
       :altTag="''"
     ></pictureText>
@@ -36,7 +34,6 @@
       "
       :headline="'Sensorstation'"
       :text="''"
-      :backgroundColor="'#ffffff'"
       :imageCaption="''"
       :altTag="''"
     ></textPicture>
@@ -59,18 +56,16 @@
 import quote from "~/components/templates/quote.vue";
 import pictureText from "~/components/templates/pictureText.vue";
 import textPicture from "~/components/templates/textPicture.vue";
-import productValues from "~/components/templates/productValues.vue";
 import textParagraph from "~/components/templates/textParagraph.vue";
 import videoTemplate from "~/components/templates/videoTemplate.vue";
 import pictureItem from "~/components/templates/pictureItem.vue";
 
 export default {
   name: "firewatch",
-  layout: "project",
+  layout: "layout-red",
   components: {
     quote,
     pictureText,
-    productValues,
     textPicture,
     textParagraph,
     videoTemplate,
