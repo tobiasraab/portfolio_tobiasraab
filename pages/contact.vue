@@ -23,7 +23,7 @@ import quote from "~/components/templates/quote.vue";
 
 export default {
   name: "contact",
-  layout: "project",
+  layout: "layout-purple",
   components: {
     quote/* ,
     siteFooter */
@@ -53,6 +53,7 @@ export default {
   color: #ffffff;
 }
 button {
+  position: relative;
   background-color: #0b2027;
   color: white;
   padding-left: 12px;
@@ -62,7 +63,7 @@ button {
   text-align: left;
   font-size: 14px;
   margin: auto;
-
+  
 }
 button:hover {
   color: #ffe600;
