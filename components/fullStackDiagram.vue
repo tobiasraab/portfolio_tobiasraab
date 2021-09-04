@@ -1,8 +1,7 @@
 <template>
-  <div>
-    <div class="diagram-container-sm"></div>
-    <div class="diagram-container hidden md:block">
+    <div class="diagram-container hidden md:block md:mt-32">
       <!--Background Connector-->
+      <h1>Design meets Technology</h1>
       <div class="diagram-background"></div>
       <div class="diagram-foreground-container flex justify-between">
         <!--Design Stack-->
@@ -15,15 +14,15 @@
         ">
           <div class="diagram-design-item px-3 py-2">
             <h2 class="text-sm lg:text-base xl:text-lg">Research</h2>
-            <img class="diagram-icon" src="~/assets/icons/microscope.svg" />
+            <img class="diagram-icon hidden lg:block" src="~/assets/icons/microscope.svg" />
           </div>
           <div class="diagram-design-item px-3 py-2">
             <h2 class="text-sm lg:text-base xl:text-lg">UX Design</h2>
-            <img class="diagram-icon" src="~/assets/icons/touch--interaction.svg" />
+            <img class="diagram-icon hidden lg:block" src="~/assets/icons/touch--interaction.svg" />
           </div>
           <div class="diagram-design-item px-3 py-2">
             <h2 class="text-sm lg:text-base xl:text-lg">UI Design</h2>
-            <img class="diagram-icon" src="~/assets/icons/dashboard.svg" />
+            <img class="diagram-icon hidden lg:block" src="~/assets/icons/dashboard.svg" />
           </div>
           <div class="mt-2 2xl:mt-2.5 line row-start-2 col-start-1 col-end-4"></div>
           <h3 class="diagram-label text-sm row-start-2 col-start-2">
@@ -80,10 +79,10 @@
             px-3
             py-2
           ">
-            <h2 class="text-sm lg:text-base xl:text-lg">Hardware</h2>
+            <h2 class="text-sm lg:text-base xl:text-lg">Database</h2>
             <ul class="hidden xl:block text-xs 2xl:text-base">
-              <li>Physical Computing</li>
-              <li>&nbsp;</li>
+              <li>NoSQL</li>
+              <li>SQL</li>
             </ul>
           </div>
           <div class="
@@ -93,10 +92,10 @@
             px-3
             py-2
           ">
-            <h2 class="text-sm lg:text-base xl:text-lg">Database</h2>
+            <h2 class="text-sm lg:text-base xl:text-lg">Hardware</h2>
             <ul class="hidden xl:block text-xs 2xl:text-base">
-              <li>NoSQL</li>
-              <li>SQL</li>
+              <li>Physical Computing</li>
+              <li>&nbsp;</li>
             </ul>
           </div>
           <div class="
@@ -117,7 +116,6 @@
         </div>
       </div>
     </div>
-  </div>
 </template>
 
 <script>
@@ -134,7 +132,7 @@
   }
 
   .diagram-background {
-    z-index: 1;
+    z-index: 2;
     position: absolute;
     top: 8%;
     width: 100%;
@@ -168,11 +166,13 @@
   .diagram-development-label {
     width: 204px;
     background-color: white;
+    height: 24px;
     text-align: center;
   }
 
   .diagram-label {
     background-color: white;
+    height: 24px;
     width: 154px;
     text-align: center;
   }
@@ -220,8 +220,13 @@
   }
 
   h1 {
+    position: absolute;
+    top: -88px;
     font-family: "silkamedium";
     font-size: 32px;
+    color: #061216;
+    z-index: 5;
+    margin-left: 56px;
   }
 
   h3 {
