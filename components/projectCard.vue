@@ -1,11 +1,19 @@
 <template>
   <NuxtLink class="nuxt-link" :to="{ path: this.linkedPath }">
     <div
-      class="project-card-container"
+      v-bind:class="{'hidden': !loaded, 'project-card-container': loaded}"
+      class=""
       @mouseenter="mouseEnter()"
       @mouseleave="mouseLeave()"
     >
-      <img class="project-card-image" v-bind:src="this.image" v-bind:alt="this.altTag"/>
+      <img
+      class="project-card-image"
+        
+        v-bind:src="this.image"
+        v-bind:alt="this.altTag"
+        v-on:load="imageLoaded"
+      />
+
       <div class="project-card-text-container pr-4 pt-11 sm:pr-4 sm:pt-10">
         <h2 class="text-xs sm:text-sm">{{ this.label }}</h2>
         <h1 class="text-xl sm:text-2xl">{{ this.title }}</h1>
@@ -20,7 +28,22 @@
 <script>
 export default {
   name: "projectCard",
-  props: ["title", "label", "image", "description", "overlayId", "linkedPath", "altTag"],
+  props: [
+    "title",
+    "label",
+    "image",
+    "description",
+    "overlayId",
+    "linkedPath",
+    "altTag",
+  ],
+  data() {
+    return {
+      loaded: false,
+    };
+  },
+  components: {
+  },
   methods: {
     mouseEnter() {
       document.getElementById(this.overlayId).style.clipPath =
@@ -30,11 +53,17 @@ export default {
       document.getElementById(this.overlayId).style.clipPath =
         "polygon(0 78.64% , 100% 70%, 100% 100%, 0 100%)";
     },
+    imageLoaded() {
+      this.loaded = true;
+    },
   },
 };
 </script>
 
-<style>
+<style scoped>
+.hidden{
+  display: none;
+}
 .nuxt-link {
   height: 400px;
 }
@@ -60,6 +89,16 @@ export default {
 
   height: 85%;
   width: 100%;
+}
+
+.project-card-image-loading {
+  z-index: 1;
+
+  position: relative;
+
+  height: 85%;
+  width: 100%;
+  background-color: #0d232b;
 }
 
 .project-card-text-container {
@@ -95,7 +134,7 @@ export default {
   transition-duration: 0.6s;
   clip-path: polygon(0 78.64%, 100% 70%, 100% 100%, 0 100%);
 
-  background-color: rgba(255, 230, 0, 0.8);
+  background-color: rgba(255, 230, 0, 0.95);
 }
 
 .project-card-hover-description {
