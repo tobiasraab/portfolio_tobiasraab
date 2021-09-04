@@ -47,10 +47,10 @@ import projectCard from "../../components/projectCard.vue";
 
 export default {
   name: "projectList",
-  layout: "portfolio",
+  layout: "layout-red-2",
   components: {
     projectCard,
-  },
+  }
 };
 </script>
 
