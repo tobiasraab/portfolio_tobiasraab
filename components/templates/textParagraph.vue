@@ -15,6 +15,8 @@ export default {
 <style scoped>
 .text-template {
   width: 100%;
+  position: relative;
+  z-index: 3;
 }
 
 .text-template > h2 {
@@ -27,5 +29,6 @@ export default {
   margin-top: 8px;
   font-family: "silkaregular";
   font-size: 18px;
+  line-height: 30px;
 }
 </style>
