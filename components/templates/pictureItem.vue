@@ -1,5 +1,5 @@
 <template>
-  <div class="p-12 m-auto max-w-screen-2xl">
+  <div class="p-12 m-auto max-w-screen-2xl pictureItem-template">
     <h2>{{ this.headline }}</h2>
     <figure>
       <img v-bind:src="this.imageSource" v-bind:alt="this.altTag"/>
@@ -16,6 +16,10 @@ export default {
 </script>
 
 <style scoped>
+.pictureItem-template{
+  position: relative;
+  z-index: 3;
+}
 div > h2 {
   font-family: "silkamedium";
   font-size: 32px;
