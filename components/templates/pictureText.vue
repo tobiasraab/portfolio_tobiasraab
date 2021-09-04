@@ -8,7 +8,6 @@
         gap-8
         grid-cols-2 grid-rows-1
       "
-      v-bind:style="{ backgroundColor: this.backgroundColor }"
     >
       <figure class="row-start-1 col-start-1">
         <img class="textPicture-image-template" v-bind:src="this.imageSource" v-bind:alt="this.altTag" />
@@ -25,13 +24,15 @@
 <script>
 export default {
   name: "textPicture",
-  props: ["imageSource", "headline", "text", "backgroundColor", "imageCaption", "altTag"],
+  props: ["imageSource", "headline", "text", "imageCaption", "altTag"],
 };
 </script>
 
 <style scoped>
 .textPicture-template {
   width: 100%;
+  position: relative;
+  z-index: 3;
 }
 
 .textPicture-content-template {
@@ -54,6 +55,7 @@ export default {
   margin-top: 8px;
   font-family: "silkaregular";
   font-size: 18px;
+  line-height: 30px;
 }
 
 figcaption {
