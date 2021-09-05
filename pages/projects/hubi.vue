@@ -1,66 +1,57 @@
 <template>
   <div>
     <quote
-      class="mt-8 mb-32"
       :backgroundColor="'#161616'"
       :color="'#ffffff'"
       :text="'Wie funktioniert Smart Home?'"
     ></quote>
     <textParagraph
-      class="mb-32"
       :headline="'Problem'"
       :text="'Problem'"
     ></textParagraph>
     <pictureText
-      class="mb-32"
       :headline="'Problem'"
       :imageSource="require('@/assets/images/hubi/question.png')"
       :text="'Wie funktioniert Smart Home? Was passiert mit meinen Daten? Kann ich das als Leie überhaupt? Wie kann ich mein zuhause präzise und einfach automatisieren um mein Leben so zu vereinfachen, wie ich es möchte? Das sind Fragen, die sich Menschen stellen, bevor sie sich ein Smart Home System aufbauen. Diesen Problemen widmet sich das Smart Home Kit: HUBI.'"
       :imageCaption="''"
     ></pictureText>
     <textPicture
-      class="mb-32"
       :headline="'UX/UI'"
       :imageSource="require('@/assets/images/hubi/question.png')"
       :text="'Wie funktioniert Smart Home? Was passiert mit meinen Daten? Kann ich das als Leie überhaupt? Wie kann ich mein zuhause präzise und einfach automatisieren um mein Leben so zu vereinfachen, wie ich es möchte? Das sind Fragen, die sich Menschen stellen, bevor sie sich ein Smart Home System aufbauen. Diesen Problemen widmet sich das Smart Home Kit: Hubi.'"
       :imageCaption="''"
     ></textPicture>
     <pictureText
-      class="mb-32"
       :headline="'Visual Programming Language (VPL)'"
       :imageSource="require('@/assets/images/hubi/question.png')"
       :text="'Wie funktioniert Smart Home? Was passiert mit meinen Daten? Kann ich das als Leie überhaupt? Wie kann ich mein zuhause präzise und einfach automatisieren um mein Leben so zu vereinfachen, wie ich es möchte? Das sind Fragen, die sich Menschen stellen, bevor sie sich ein Smart Home System aufbauen. Diesen Problemen widmet sich das Smart Home Kit: Hubi.'"
       :imageCaption="''"
     ></pictureText>
     <textPicture
-      class="mb-32"
       :headline="'Unsichtbares Sichtbar'"
       :imageSource="require('@/assets/images/hubi/question.png')"
       :text="'Wie funktioniert Smart Home? Was passiert mit meinen Daten? Kann ich das als Leie überhaupt? Wie kann ich mein zuhause präzise und einfach automatisieren um mein Leben so zu vereinfachen, wie ich es möchte? Das sind Fragen, die sich Menschen stellen, bevor sie sich ein Smart Home System aufbauen. Diesen Problemen widmet sich das Smart Home Kit: Hubi.'"
       :imageCaption="''"
     ></textPicture>
     <pictureText
-      class="mb-32"
       :headline="'Visual Design'"
       :imageSource="require('@/assets/images/hubi/question.png')"
       :text="'Wie funktioniert Smart Home? Was passiert mit meinen Daten? Kann ich das als Leie überhaupt? Wie kann ich mein zuhause präzise und einfach automatisieren um mein Leben so zu vereinfachen, wie ich es möchte? Das sind Fragen, die sich Menschen stellen, bevor sie sich ein Smart Home System aufbauen. Diesen Problemen widmet sich das Smart Home Kit: Hubi.'"
       :imageCaption="''"
     ></pictureText>
     <textPicture
-      class="mb-32"
       :headline="'Smart Hub'"
       :imageSource="require('@/assets/images/hubi/question.png')"
       :text="'Wie funktioniert Smart Home? Was passiert mit meinen Daten? Kann ich das als Leie überhaupt? Wie kann ich mein zuhause präzise und einfach automatisieren um mein Leben so zu vereinfachen, wie ich es möchte? Das sind Fragen, die sich Menschen stellen, bevor sie sich ein Smart Home System aufbauen. Diesen Problemen widmet sich das Smart Home Kit: Hubi.'"
       :imageCaption="''"
     ></textPicture>
     <pictureText
-      class="mb-32"
       :headline="'Prozess'"
       :imageSource="require('@/assets/images/hubi/question.png')"
       :text="'Wie funktioniert Smart Home? Was passiert mit meinen Daten? Kann ich das als Leie überhaupt? Wie kann ich mein zuhause präzise und einfach automatisieren um mein Leben so zu vereinfachen, wie ich es möchte? Das sind Fragen, die sich Menschen stellen, bevor sie sich ein Smart Home System aufbauen. Diesen Problemen widmet sich das Smart Home Kit: Hubi.'"
       :imageCaption="''"
     ></pictureText>
-    <iconPattern class="mb-24"
+    <iconPattern
       :headTitle="'Product Values'"
       :title1="'Transparenz'"
       :icon1="require('@/assets/icons/view.svg')"
