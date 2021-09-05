@@ -84,7 +84,7 @@
         detectRetina: true,
       }"
     />
-    <Nuxt class="layoutNuxt p-0 pt-24" />
+    <Nuxt class="layoutNuxt pt-24 px-8 sm:px-16 md:px-16 mb-32 md:mb-48" />
     <siteFooter class="footer-template"></siteFooter>
   </div>
 </template>
