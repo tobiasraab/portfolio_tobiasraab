@@ -9,7 +9,6 @@
         <button>Kontaktieren</button>
       </a>
     </div>
-    <!-- <siteFooter id="siteFooterContact"></siteFooter> -->
   </div>
 </template>
 
@@ -18,24 +17,18 @@
 
 
 import quote from "~/components/templates/quote.vue";
-/* import siteFooter from "~/components/siteFooter.vue"; */
 
 
 export default {
   name: "contact",
   layout: "layout-purple",
   components: {
-    quote/* ,
-    siteFooter */
+    quote
   },
 };
 </script>
 
 <style scoped>
-/* #siteFooterContact {
-  position: absolute;
-  bottom:0%
-} */
 .quote-container {
   display: table-cell;
   vertical-align: middle;
