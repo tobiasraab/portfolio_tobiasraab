@@ -221,12 +221,12 @@
 
   h1 {
     position: absolute;
-    top: -88px;
+    top: -80px;
     font-family: "silkamedium";
     font-size: 32px;
     color: #061216;
     z-index: 5;
-    margin-left: 56px;
+    margin-left: 44px;
   }
 
   h3 {
