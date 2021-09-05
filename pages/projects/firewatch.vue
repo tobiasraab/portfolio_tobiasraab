@@ -1,14 +1,12 @@
 <template>
   <div>
     <quote
-      class="mt-8 mb-32"
       :backgroundColor="'#161616'"
       :color="'#ffffff'"
       :text="'Camp Creek Road Fire:<br>85 Tote'"
       :origin="'Quelle: Government of California (CAL FIRE)'"
     ></quote>
     <textPicture
-      class="mb-32"
       :imageSource="
         require('~/assets/images/firewatch/matt-howard-eAKDzK4lo4o-unsplash.jpg')
       "
@@ -18,7 +16,6 @@
       :altTag="''"
     ></textPicture>
     <pictureText
-      class="mb-32"
       :imageSource="
         require('~/assets/images/firewatch/sensorImg4.jpg')
       "
@@ -28,7 +25,6 @@
       :altTag="''"
     ></pictureText>
     <textPicture
-      class="mb-32"
       :imageSource="
         require('~/assets/images/firewatch/sensorImg1.jpg')
       "
@@ -38,14 +34,13 @@
       :altTag="''"
     ></textPicture>
     <pictureItem
-      class="mb-32 hidden md:block"
+      class="hidden md:block"
       :headline="'System'"
       :imageSource="require('@/assets/images/firewatch/system.png')"
       :imageCaption="''"
       :altTag="''"
     ></pictureItem>
     <videoTemplate
-      class="mb-32"
       :src="'https://www.youtube-nocookie.com/embed/7PGhk9Zf-bI?&autoplay=1&mute=1&loop=1&playlist=7PGhk9Zf-bI'"
       :headline="'UX/UI (Prototype)'"
     ></videoTemplate>
