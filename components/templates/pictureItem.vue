@@ -1,9 +1,9 @@
 <template>
-  <div class="p-12 m-auto max-w-screen-2xl pictureItem-template">
-    <h2>{{ this.headline }}</h2>
+  <div class="px-4 sm:px-8 md:px-16 mb-32 md:mb-48 m-auto max-w-screen-2xl pictureItem-template">
+    <h2 class="text-xl md:text-3xl mb-4 md:mb-8" v-if="this.headline">{{ this.headline }}</h2>
     <figure>
       <img v-bind:src="this.imageSource" v-bind:alt="this.altTag"/>
-      <figcaption>{{ this.imageCaption }}</figcaption>
+      <figcaption v-if="this.imageCaption">{{ this.imageCaption }}</figcaption>
     </figure>
   </div>
 </template>
@@ -16,14 +16,19 @@ export default {
 </script>
 
 <style scoped>
+figcaption{
+  position: relative;
+  z-index: 3;
+}
 .pictureItem-template{
   position: relative;
   z-index: 3;
 }
 div > h2 {
   font-family: "silkamedium";
-  font-size: 32px;
   color: #061216;
-  margin-bottom: 32px;
+}
+img {
+  margin: auto;
 }
 </style>

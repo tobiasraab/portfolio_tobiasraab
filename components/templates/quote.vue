@@ -1,10 +1,10 @@
 <template>
-  <div>
-    <div
-      class="quote-container"
+  <div class="mb-32 md:mb-48">
+    <h2
+      class="quote-container leading-10 p-16 text-2xl md:text-3xl"
       v-html="this.text"
-    ></div>
-    <p class="quote-origin">{{ this.origin }}</p>
+    ></h2>
+    <p class="quote-origin" v-if="this.origin">{{ this.origin }}</p>
   </div>
 </template>
 
@@ -29,12 +29,13 @@ export default {
   text-align: center;
 
   font-family: "silkalight";
-  font-size: 32px;
 
   background-color: #080808;
   color: #ffffff;
 }
 .quote-origin {
+  position: relative;
+  z-index: 3;
   margin-top: 4px;
   margin-left: 6px;
 }

@@ -1,5 +1,5 @@
 <template>
-  <div class="p-12 m-auto max-w-screen-2xl">
+  <div class="px-4 sm:px-8 md:px-16 mb-32 md:mb-48 m-auto max-w-screen-2xl">
     <div
       class="
         textPicture-template
@@ -14,8 +14,8 @@
         <figcaption>{{ this.imageCaption }}</figcaption>
       </figure>
       <div class="textPicture-content-template row-start-1 col-start-1">
-        <h2>{{ this.headline }}</h2>
-        <p>{{ this.text }}</p>
+        <h2 class="text-xl md:text-3xl">{{ this.headline }}</h2>
+        <p class="text-base md:text-lg leading-6 md:leading-7 mt-2 md:mt-4">{{ this.text }}</p>
       </div>
     </div>
   </div>
@@ -49,15 +49,11 @@ export default {
 
 .textPicture-content-template > h2 {
   font-family: "silkamedium";
-  font-size: 32px;
   color: #061216;
 }
 
 .textPicture-content-template > p {
-  margin-top: 8px;
   font-family: "silkaregular";
-  font-size: 18px;
-  line-height: 30px;
 }
 
 figcaption {
