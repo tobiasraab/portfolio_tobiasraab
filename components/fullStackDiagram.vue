@@ -14,15 +14,15 @@
         ">
           <div class="diagram-design-item px-3 py-2">
             <h2 class="text-sm lg:text-base xl:text-lg">Research</h2>
-            <img class="diagram-icon hidden lg:block" src="~/assets/icons/microscope.svg" />
+            <img class="diagram-icon hidden lg:block" src="~/assets/icons/microscope.svg" alt="Design Research"/>
           </div>
           <div class="diagram-design-item px-3 py-2">
             <h2 class="text-sm lg:text-base xl:text-lg">UX Design</h2>
-            <img class="diagram-icon hidden lg:block" src="~/assets/icons/touch--interaction.svg" />
+            <img class="diagram-icon hidden lg:block" src="~/assets/icons/touch--interaction.svg" alt="UX Design"/>
           </div>
           <div class="diagram-design-item px-3 py-2">
             <h2 class="text-sm lg:text-base xl:text-lg">UI Design</h2>
-            <img class="diagram-icon hidden lg:block" src="~/assets/icons/dashboard.svg" />
+            <img class="diagram-icon hidden lg:block" src="~/assets/icons/dashboard.svg" alt="UI Design"/>
           </div>
           <div class="mt-2 2xl:mt-2.5 line row-start-2 col-start-1 col-end-4"></div>
           <h3 class="diagram-label text-sm row-start-2 col-start-2">
@@ -46,10 +46,6 @@
             py-2
           ">
             <h2 class="text-sm lg:text-base xl:text-lg">Frontend</h2>
-            <!-- <h2 class="text-sm hidden lg:block lg:text-base xl:text-lg">
-            Frontend Development
-          </h2>
-          <h2 class="text-sm hidden md:block lg:hidden">Frontend</h2> -->
             <ul class="hidden xl:block text-xs 2xl:text-base">
               <li>HTML/CSS/JS</li>
               <li>Vue.js</li>
@@ -63,10 +59,6 @@
             py-2
           ">
             <h2 class="text-sm lg:text-base xl:text-lg">Backend</h2>
-            <!-- <h2 class="text-sm hidden lg:block lg:text-base xl:text-lg">
-            Backend Development
-          </h2>
-          <h2 class="text-sm hidden md:block lg:hidden">Backend</h2> -->
             <ul class="hidden xl:block text-xs 2xl:text-base">
               <li>Distributed Computing</li>
               <li>IoT-Development</li>

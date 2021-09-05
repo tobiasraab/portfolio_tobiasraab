@@ -13,7 +13,7 @@
       :headline="'FireWatch'"
       :text="'Die Anzahl der Waldbrände steigt. Und ein Zurückgehen der Brände ist auf Grund des Klimawandels nicht in Sicht. Die Höhe der Gefahrenstufe für einen Waldbrand hängt von verschiedenen Faktoren ab. Zum Beispiel Bodenfeuchtigkeit, Außentemperatur, Luftfeuchtigkeit, Windgeschwindigkeit, usw. Hierfür wurde das IoT-System \'FireWatch\' entwickelt. Es handelt sich hierbei um einen voll funktionsfähigen leicht skallierbaren Produktprototypen. Das System sammelt für den Waldbrandindex relevante Daten und gibt dem Nutzer diese in einem Dashboard aus. Jeder Wald ist mit einem Registrierungscode ausgestattet, sodass der Nutzer seine im Wald gesammelten Daten unkompliziert über einen Code mit Anderen teilen kann.'"
       :imageCaption="''"
-      :altTag="''"
+      :altTag="'Brennender Wald bei Nacht'"
     ></textPicture>
     <pictureText
       :imageSource="
@@ -22,7 +22,7 @@
       :headline="'FireWatch'"
       :text="'fsadfadsf'"
       :imageCaption="''"
-      :altTag="''"
+      :altTag="'Sensorstation auf Waldboden'"
     ></pictureText>
     <textPicture
       :imageSource="
@@ -31,14 +31,14 @@
       :headline="'Sensorstation'"
       :text="''"
       :imageCaption="''"
-      :altTag="''"
+      :altTag="'Sensorstation'"
     ></textPicture>
     <pictureItem
       class="hidden md:block"
       :headline="'System'"
       :imageSource="require('@/assets/images/firewatch/system.png')"
       :imageCaption="''"
-      :altTag="''"
+      :altTag="'System Aufbau Visualiserung'"
     ></pictureItem>
     <videoTemplate
       :src="'https://www.youtube-nocookie.com/embed/7PGhk9Zf-bI?&autoplay=1&mute=1&loop=1&playlist=7PGhk9Zf-bI'"
