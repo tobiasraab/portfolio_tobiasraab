@@ -1,4 +1,6 @@
 <template>
+<!-- TODO: -->
+<!-- Use Video tag not youtube!!!!!! -->
   <div class="px-4 sm:px-8 md:px-16 mb-32 md:mb-48 m-auto max-w-screen-2xl video-template">
     <h2 class="text-2xl md:text-3xl mb-4 md:mb-8">{{ this.headline }}</h2>
     <div class="video-container">
