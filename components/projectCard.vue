@@ -1,7 +1,7 @@
 <template>
   <NuxtLink class="nuxt-link" :to="{ path: this.linkedPath }">
     <div
-      v-bind:class="{'hidden': !loaded, 'project-card-container': loaded}"
+      v-bind:class="{'loading-hidden': !loaded, 'project-card-container': loaded}"
       class=""
       @mouseenter="mouseEnter()"
       @mouseleave="mouseLeave()"
@@ -14,12 +14,12 @@
         v-on:load="imageLoaded"
       />
 
-      <div class="project-card-text-container pr-4 pt-11 sm:pr-4 sm:pt-10">
+      <div class="project-card-text-container pr-4 pt-12 sm:pt-10">
         <h2 class="text-xs sm:text-sm">{{ this.label }}</h2>
         <h1 class="text-xl sm:text-2xl">{{ this.title }}</h1>
       </div>
       <div class="project-card-hover-overlay" v-bind:id="this.overlayId">
-        <p class="project-card-hover-description">{{ this.description }}</p>
+        <p class="hidden md:block hidden project-card-hover-description">{{ this.description }}</p>
       </div>
     </div>
   </NuxtLink>
@@ -61,7 +61,7 @@ export default {
 </script>
 
 <style scoped>
-.hidden{
+.loading-hidden{
   display: none;
 }
 .nuxt-link {
@@ -138,8 +138,6 @@ export default {
 }
 
 .project-card-hover-description {
-  display: block;
-
   padding: 2px;
 
   font-family: "silkamedium";
@@ -151,11 +149,11 @@ export default {
 
 h1 {
   font-family: "silkaregular";
-  font-size: 28px;
+  /* font-size: 28px; */
 }
 
 h2 {
   font-family: "silkalight";
-  font-size: 14px;
+  /* font-size: 14px; */
 }
 </style>
