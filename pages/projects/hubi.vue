@@ -14,42 +14,49 @@
       :imageSource="require('@/assets/images/hubi/question.png')"
       :text="'Wie funktioniert Smart Home? Was passiert mit meinen Daten? Kann ich das als Leie überhaupt? Wie kann ich mein zuhause präzise und einfach automatisieren um mein Leben so zu vereinfachen, wie ich es möchte? Das sind Fragen, die sich Menschen stellen, bevor sie sich ein Smart Home System aufbauen. Diesen Problemen widmet sich das Smart Home Kit: HUBI.'"
       :imageCaption="''"
+      :altTag="''"
     ></pictureText>
     <textPicture
       :headline="'UX/UI'"
       :imageSource="require('@/assets/images/hubi/question.png')"
       :text="'Wie funktioniert Smart Home? Was passiert mit meinen Daten? Kann ich das als Leie überhaupt? Wie kann ich mein zuhause präzise und einfach automatisieren um mein Leben so zu vereinfachen, wie ich es möchte? Das sind Fragen, die sich Menschen stellen, bevor sie sich ein Smart Home System aufbauen. Diesen Problemen widmet sich das Smart Home Kit: Hubi.'"
       :imageCaption="''"
+      :altTag="''"
     ></textPicture>
     <pictureText
       :headline="'Visual Programming Language (VPL)'"
       :imageSource="require('@/assets/images/hubi/question.png')"
       :text="'Wie funktioniert Smart Home? Was passiert mit meinen Daten? Kann ich das als Leie überhaupt? Wie kann ich mein zuhause präzise und einfach automatisieren um mein Leben so zu vereinfachen, wie ich es möchte? Das sind Fragen, die sich Menschen stellen, bevor sie sich ein Smart Home System aufbauen. Diesen Problemen widmet sich das Smart Home Kit: Hubi.'"
       :imageCaption="''"
+      :altTag="''"
     ></pictureText>
     <textPicture
       :headline="'Unsichtbares Sichtbar'"
       :imageSource="require('@/assets/images/hubi/question.png')"
       :text="'Wie funktioniert Smart Home? Was passiert mit meinen Daten? Kann ich das als Leie überhaupt? Wie kann ich mein zuhause präzise und einfach automatisieren um mein Leben so zu vereinfachen, wie ich es möchte? Das sind Fragen, die sich Menschen stellen, bevor sie sich ein Smart Home System aufbauen. Diesen Problemen widmet sich das Smart Home Kit: Hubi.'"
       :imageCaption="''"
+      :altTag="''"
     ></textPicture>
     <pictureText
       :headline="'Visual Design'"
       :imageSource="require('@/assets/images/hubi/question.png')"
       :text="'Wie funktioniert Smart Home? Was passiert mit meinen Daten? Kann ich das als Leie überhaupt? Wie kann ich mein zuhause präzise und einfach automatisieren um mein Leben so zu vereinfachen, wie ich es möchte? Das sind Fragen, die sich Menschen stellen, bevor sie sich ein Smart Home System aufbauen. Diesen Problemen widmet sich das Smart Home Kit: Hubi.'"
       :imageCaption="''"
+      :altTag="''"
     ></pictureText>
     <textPicture
       :headline="'Smart Hub'"
       :imageSource="require('@/assets/images/hubi/question.png')"
       :text="'Wie funktioniert Smart Home? Was passiert mit meinen Daten? Kann ich das als Leie überhaupt? Wie kann ich mein zuhause präzise und einfach automatisieren um mein Leben so zu vereinfachen, wie ich es möchte? Das sind Fragen, die sich Menschen stellen, bevor sie sich ein Smart Home System aufbauen. Diesen Problemen widmet sich das Smart Home Kit: Hubi.'"
       :imageCaption="''"
+      :altTag="''"
     ></textPicture>
     <pictureText
       :headline="'Prozess'"
       :imageSource="require('@/assets/images/hubi/question.png')"
       :text="'Wie funktioniert Smart Home? Was passiert mit meinen Daten? Kann ich das als Leie überhaupt? Wie kann ich mein zuhause präzise und einfach automatisieren um mein Leben so zu vereinfachen, wie ich es möchte? Das sind Fragen, die sich Menschen stellen, bevor sie sich ein Smart Home System aufbauen. Diesen Problemen widmet sich das Smart Home Kit: Hubi.'"
       :imageCaption="''"
+      :altTag="''"
     ></pictureText>
     <iconPattern
       :headTitle="'Product Values'"
