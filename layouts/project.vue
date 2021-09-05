@@ -18,7 +18,7 @@ export default {
     }
 }
 </script>
-<style>
+<style scoped>
 @import './../assets/fonts/fontRoman.css';
 @import './../assets/fonts/fontitalic.css';
   body {
