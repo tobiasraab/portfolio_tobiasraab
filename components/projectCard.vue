@@ -66,13 +66,15 @@ export default {
 }
 .nuxt-link {
   height: 400px;
+  width: 100%;
 }
 
 .project-card-container {
-  display: inline-block;
+  display: block;
 
   height: 400px;
   width: 100%;
+  max-width: 560px;
 
   margin: auto;
 

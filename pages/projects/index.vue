@@ -8,6 +8,7 @@
         gap-16
         h-auto
         max-w-screen-2xl
+        justify-items-center
         mt-12
         m-auto
       "
