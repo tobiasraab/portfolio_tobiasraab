@@ -188,7 +188,7 @@ header {
 }
 
 #navTopMenu {
-  z-index: 2;
+  z-index: 10;
 
   /* position: sticky;
       position: -webkit-sticky; */
