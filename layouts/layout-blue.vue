@@ -93,7 +93,7 @@ body {
   position: relative;
   bottom: 0%;
   left: 0%;
-  z-index: 4;
+  z-index: 2;
 }
 .layoutNuxt {
   min-height: calc(100vh - 28px - 48px);
