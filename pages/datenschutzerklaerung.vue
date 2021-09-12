@@ -106,41 +106,6 @@
       eingeschränkt sein. Aus diesem Grund ist ein Widerspruch ausgeschlossen.
     </p>
     <p></p>
-    <h2>Eingebettete YouTube-Videos</h2>
-    <p>
-      Auf unserer Website betten wir YouTube-Videos ein. Betreiber der
-      entsprechenden Plugins ist die YouTube, LLC, 901 Cherry Ave., San Bruno,
-      CA 94066, USA (nachfolgend „YouTube“). Die YouTube, LLC ist einer
-      Tochtergesellschaft der Google LLC, 1600 Amphitheatre Pkwy, Mountain View,
-      CA 94043, USA (nachfolgend „Google“). Wenn Sie eine Seite mit dem
-      YouTube-Plugin besuchen, wird eine Verbindung zu Servern von YouTube
-      hergestellt. Dabei wird YouTube mitgeteilt, welche Seiten Sie besuchen.
-      Wenn Sie in Ihrem YouTube-Account eingeloggt sind, kann YouTube Ihr
-      Surfverhalten Ihnen persönlich zuzuordnen. Dies verhindern Sie, indem Sie
-      sich vorher aus Ihrem YouTube-Account ausloggen.
-    </p>
-    <p>
-      Wird ein YouTube-Video gestartet, setzt der Anbieter Cookies ein, die
-      Hinweise über das Nutzerverhalten sammeln.
-    </p>
-    <p>
-      Weitere Informationen zu Zweck und Umfang der Datenerhebung und ihrer
-      Verarbeitung durch YouTube erhalten Sie in den Datenschutzerklärungen des
-      Anbieters, Dort erhalten Sie auch weitere Informationen zu Ihren
-      diesbezüglichen Rechten und Einstellungsmöglichkeiten zum Schutze Ihrer
-      Privatsphäre (<a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a>).
-    </p>
-    <h3>Widerruf der Einwilligung:</h3>
-    <p>
-      Vom Anbieter wird derzeit keine Möglichkeit für einen einfachen Opt-out
-      oder ein Blockieren der Datenübertragung angeboten. Wenn Sie eine
-      Nachverfolgung Ihrer Aktivitäten auf unserer Website verhindern wollen,
-      widerrufen Sie bitte im Cookie-Consent-Tool Ihre Einwilligung für die
-      entsprechende Cookie-Kategorie oder alle technisch nicht notwendigen
-      Cookies und Datenübertragungen. In diesem Fall können Sie unsere Website
-      jedoch ggfs. nicht oder nur eingeschränkt nutzen.
-    </p>
-    <p></p>
     <h2>SSL-Verschlüsselung</h2>
     <p>
       Um die Sicherheit Ihrer Daten bei der Übertragung zu schützen, verwenden
