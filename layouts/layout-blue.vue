@@ -85,7 +85,7 @@ export default {
 </script>
 <style scoped>
 @import "./../assets/fonts/fontRoman.css";
-@import "./../assets/fonts/fontitalic.css";
+
 body {
   font-family: "silkaregular", sans-serif;
 }
