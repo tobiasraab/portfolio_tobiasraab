@@ -37,20 +37,25 @@
       :imageCaption="''"
       :altTag="''"
     ></textPicture>
-    <pictureText
-      :headline="'Visual Design'"
-      :imageSource="require('@/assets/images/hubi/question.png')"
-      :text="'Wie funktioniert Smart Home? Was passiert mit meinen Daten? Kann ich das als Leie überhaupt? Wie kann ich mein zuhause präzise und einfach automatisieren um mein Leben so zu vereinfachen, wie ich es möchte? Das sind Fragen, die sich Menschen stellen, bevor sie sich ein Smart Home System aufbauen. Diesen Problemen widmet sich das Smart Home Kit: Hubi.'"
-      :imageCaption="''"
-      :altTag="''"
-    ></pictureText>
+    <videoText
+      :headline="'Unsichtbares Sichtbar machen'"
+      :text="'test'"
+      :src="require('@/assets/videos/hubi_network.mp4')"
+    ></videoText>
     <textPicture
-      :headline="'Smart Hub'"
-      :imageSource="require('@/assets/images/hubi/question.png')"
+      :headline="'Visual Design'"
+      :imageSource="require('@/assets/images/hubi/visual.png')"
       :text="'Wie funktioniert Smart Home? Was passiert mit meinen Daten? Kann ich das als Leie überhaupt? Wie kann ich mein zuhause präzise und einfach automatisieren um mein Leben so zu vereinfachen, wie ich es möchte? Das sind Fragen, die sich Menschen stellen, bevor sie sich ein Smart Home System aufbauen. Diesen Problemen widmet sich das Smart Home Kit: Hubi.'"
       :imageCaption="''"
       :altTag="''"
     ></textPicture>
+    <pictureText
+      :headline="'Hardware Low-Fidelity'"
+      :imageSource="require('@/assets/images/hubi/hubihardware.png')"
+      :text="'Im entworfenen Case ist ist ein Raspberry Pi verbaut, welcher einen Web Server hostet, mit Hilfe dessen der Nutzer sein Smart Home steuert. Um die Kommunikation mit verschiedenen Smart Home Devices zu ermöglichen ist eine zigbee Antenne mit integriert. Des Weiteren erhält der Nutzer über die verbauten LEDs ein visuelles Feedback, wenn Daten vom Smart Hub versendet oder empfangen werden.'"
+      :imageCaption="''"
+      :altTag="''"
+    ></pictureText>
     <pictureText
       :headline="'Prozess'"
       :imageSource="require('@/assets/images/hubi/question.png')"
@@ -69,6 +74,11 @@
       :title4="'Kompatibilität'"
       :icon4="require('@/assets/icons/share.svg')"
     ></iconPattern>
+    <videoText
+      :headline="'UX/UI'"
+      :src="require('@/assets/videos/hubi_uxui.mp4')"
+      :text="'Wie funktioniert Smart Home? Was passiert mit meinen Daten? Kann ich das als Leie überhaupt? Wie kann ich mein zuhause präzise und einfach automatisieren um mein Leben so zu vereinfachen, wie ich es möchte? Das sind Fragen, die sich Menschen stellen, bevor sie sich ein Smart Home System aufbauen. Diesen Problemen widmet sich das Smart Home Kit: Hubi.'"
+    ></videoText>
   </div>
 </template>
 
@@ -78,6 +88,7 @@ import pictureText from "~/components/templates/pictureText.vue";
 import textPicture from "~/components/templates/textPicture.vue";
 import iconPattern from "~/components/templates/iconPattern.vue";
 import textParagraph from "~/components/templates/textParagraph.vue";
+import videoText from "~/components/templates/videoText.vue";
 
 export default {
   name: "hubi",
@@ -88,6 +99,7 @@ export default {
     iconPattern,
     textPicture,
     textParagraph,
+    videoText
   },
 };
 </script>
