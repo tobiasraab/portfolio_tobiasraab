@@ -5,64 +5,44 @@
       :color="'#ffffff'"
       :text="'Wie funktioniert Smart Home?'"
     ></quote>
-    <textParagraph
-      :headline="'Problem'"
-      :text="'Problem'"
-    ></textParagraph>
     <pictureText
       :headline="'Problem'"
       :imageSource="require('@/assets/images/hubi/question.png')"
-      :text="'Wie funktioniert Smart Home? Was passiert mit meinen Daten? Kann ich das als Leie überhaupt? Wie kann ich mein zuhause präzise und einfach automatisieren um mein Leben so zu vereinfachen, wie ich es möchte? Das sind Fragen, die sich Menschen stellen, bevor sie sich ein Smart Home System aufbauen. Diesen Problemen widmet sich das Smart Home Kit: HUBI.'"
+      :text="'Wie funktioniert Smart Home? Was passiert mit meinen Daten? Kann ich das als Leie überhaupt? Wie kann ich mein zuhause präzise und einfach automatisieren um mein Leben so zu vereinfachen, wie ich es möchte? Das sind Fragen, die sich Menschen stellen, bevor sie sich ein Smart Home System aufbauen. Das Smart Home Kit HUBI bietet darauf eine Lösung.'"
       :imageCaption="''"
       :altTag="''"
     ></pictureText>
-    <textPicture
-      :headline="'UX/UI'"
-      :imageSource="require('@/assets/images/hubi/question.png')"
-      :text="'Wie funktioniert Smart Home? Was passiert mit meinen Daten? Kann ich das als Leie überhaupt? Wie kann ich mein zuhause präzise und einfach automatisieren um mein Leben so zu vereinfachen, wie ich es möchte? Das sind Fragen, die sich Menschen stellen, bevor sie sich ein Smart Home System aufbauen. Diesen Problemen widmet sich das Smart Home Kit: Hubi.'"
-      :imageCaption="''"
-      :altTag="''"
-    ></textPicture>
-    <pictureText
-      :headline="'Visual Programming Language (VPL)'"
-      :imageSource="require('@/assets/images/hubi/question.png')"
-      :text="'Wie funktioniert Smart Home? Was passiert mit meinen Daten? Kann ich das als Leie überhaupt? Wie kann ich mein zuhause präzise und einfach automatisieren um mein Leben so zu vereinfachen, wie ich es möchte? Das sind Fragen, die sich Menschen stellen, bevor sie sich ein Smart Home System aufbauen. Diesen Problemen widmet sich das Smart Home Kit: Hubi.'"
-      :imageCaption="''"
-      :altTag="''"
-    ></pictureText>
-    <textPicture
+    <textVideo
       :headline="'Unsichtbares Sichtbar'"
-      :imageSource="require('@/assets/images/hubi/question.png')"
-      :text="'Wie funktioniert Smart Home? Was passiert mit meinen Daten? Kann ich das als Leie überhaupt? Wie kann ich mein zuhause präzise und einfach automatisieren um mein Leben so zu vereinfachen, wie ich es möchte? Das sind Fragen, die sich Menschen stellen, bevor sie sich ein Smart Home System aufbauen. Diesen Problemen widmet sich das Smart Home Kit: Hubi.'"
-      :imageCaption="''"
-      :altTag="''"
-    ></textPicture>
-    <videoText
-      :headline="'Unsichtbares Sichtbar machen'"
-      :text="'test'"
+      :text="'Für den Laien ist die Vorstellubng von Datenverkehr in einem Netzwerk etwas sehr abstraktes. Um dem Nutzer ein Verständniss für die vielen unsichtbaren Datenpakete zu geben, die er in seinem Smart Home Netzwerk versendet, wurde die Netzwerkansicht entwickelt. Diese visualisiert alle Geräte im Smart Home Netz und ermöglicht dem Nutzer die Daten die im Netzwerk verschickt werden einzusehen. Wenn zum Beispiel die zigbee Fernbedienung gedrückt wird, zeigt die Netzwerkansicht parallel dazu, wie ein Datenpaket von der Fernbedienung zum HUb gesendet wird. Zusätzlich leuchten die LEDs im Case des Smart Hubs auf.'"
       :src="require('@/assets/videos/hubi_network.mp4')"
+    ></textVideo>
+    <videoText
+      :headline="'UX/UI'"
+      :src="require('@/assets/videos/hubi_uxui.mp4')"
+      :text="'Damit dem Nutzer eine möglichst intuitive und verständliche Möglichkeit geboten werden kann sein Smart Home zu programmieren, wurde eine neue grafische Programmiersprache entwickelt. Diese basiert, ähnlich wie Node-RED, auf dem Prinzip von verschiedenen Knoten. Jedes steuerbare Gerät im Netzwerk wird als Knoten visualisert. Wenn es sich im einen Aktor handelt kann der Nutzer Daten an das Gerät senden. Wenn es sich bei dem Gerät um einen Sensor, zum Beispiel zur Überwachung der Temperatur, handelt, kann der Nutzer die empfangenen Daten in seine Programmierung integrieren. Mit verschiedenen Funktionen (if-Nodes, send-Nodes, loops) kann der Nutzer sein Smarthome individuell an seine Bedürfnisse anpassen.'"
     ></videoText>
     <textPicture
-      :headline="'Visual Design'"
-      :imageSource="require('@/assets/images/hubi/visual.png')"
-      :text="'Wie funktioniert Smart Home? Was passiert mit meinen Daten? Kann ich das als Leie überhaupt? Wie kann ich mein zuhause präzise und einfach automatisieren um mein Leben so zu vereinfachen, wie ich es möchte? Das sind Fragen, die sich Menschen stellen, bevor sie sich ein Smart Home System aufbauen. Diesen Problemen widmet sich das Smart Home Kit: Hubi.'"
+      :headline="'Hardware'"
+      :imageSource="require('@/assets/images/hubi/hubihardware.png')"
+      :text="'Im entworfenen Case ist ist ein Raspberry Pi verbaut, welcher einen Web Server hostet, mit Hilfe dessen der Nutzer sein Smart Home steuert. Dadurch dass der Server direkt vom Smart Hub gehostet wird verlassen die Daten des Nutzers das eigene Heimnetzwerk nicht. Dadurch kann der Datenschutz sicher gestellt werden. Um die Kommunikation mit verschiedenen Smart Home Devices zu ermöglichen ist eine zigbee Antenne mit integriert. Des Weiteren erhält der Nutzer über die verbauten LEDs ein visuelles Feedback, wenn Daten vom Smart Hub versendet oder empfangen werden.'"
       :imageCaption="''"
-      :altTag="''"
+      :altTag="'Smart Home Basis Station'"
     ></textPicture>
     <pictureText
-      :headline="'Hardware Low-Fidelity'"
-      :imageSource="require('@/assets/images/hubi/hubihardware.png')"
-      :text="'Im entworfenen Case ist ist ein Raspberry Pi verbaut, welcher einen Web Server hostet, mit Hilfe dessen der Nutzer sein Smart Home steuert. Um die Kommunikation mit verschiedenen Smart Home Devices zu ermöglichen ist eine zigbee Antenne mit integriert. Des Weiteren erhält der Nutzer über die verbauten LEDs ein visuelles Feedback, wenn Daten vom Smart Hub versendet oder empfangen werden.'"
+      :headline="'Software'"
+      :imageSource="require('@/assets/images/hubi/backendCode.png')"
+      :text="'Das Backend besteht aus einem Node Server welcher auf dem Rapberry Pi gehostet wird. Da die graphische Programmieroberfläche mit dem Schwerpunkt Smarthome gestaltet wurde, gab es noch keine existierende Software, welche den gestelten Anforderungen gerecht wurde. Aufgrund dessen musste ein von Grund auf neues Programm entwickelt werden. Dieses bildet das Gehirn des Systems. Von ihm werden die vom Nutzer erstellten Flows zur Heimautomation verwaltet und umgesetzt. Hierfür genutze technologien sind unter anderem: Express.js, socket.io, mqtt. Umgesetzt mit JavaScript auf Basis von Node.js.<br>Das Frontend ist mit vue.js umgesetzt und kommuniziert über eine Rest Schnittstelle und socket.io mit dem Backend.'"
       :imageCaption="''"
-      :altTag="''"
+      :altTag="'Node.js Backend Code'"
     ></pictureText>
-    <pictureText
-      :headline="'Prozess'"
-      :imageSource="require('@/assets/images/hubi/question.png')"
-      :text="'Wie funktioniert Smart Home? Was passiert mit meinen Daten? Kann ich das als Leie überhaupt? Wie kann ich mein zuhause präzise und einfach automatisieren um mein Leben so zu vereinfachen, wie ich es möchte? Das sind Fragen, die sich Menschen stellen, bevor sie sich ein Smart Home System aufbauen. Diesen Problemen widmet sich das Smart Home Kit: Hubi.'"
+     <textPicture
+      :headline="'Visual Design'"
+      :imageSource="require('@/assets/images/hubi/visual.png')"
+      :text="'Das Maskottchen unterstützt den Nutzer inerhalb der Anwendung mit hilfreichen Tipps und Erklärungen, sowie einem Tutorial zum Kennen lernen der verschiedenen Funktionen. Die Verpackung enthält verschiedene Motive, welche den Aspekt Netzwerktechnik visualiserien. Datenpakete werden hierbei verbildlicht zwischen Sechsecken versendet.'"
       :imageCaption="''"
-      :altTag="''"
-    ></pictureText>
+      :altTag="'Design System'"
+    ></textPicture>
     <iconPattern
       :headTitle="'Product Values'"
       :title1="'Transparenz'"
@@ -74,11 +54,6 @@
       :title4="'Kompatibilität'"
       :icon4="require('@/assets/icons/share.svg')"
     ></iconPattern>
-    <videoText
-      :headline="'UX/UI'"
-      :src="require('@/assets/videos/hubi_uxui.mp4')"
-      :text="'Wie funktioniert Smart Home? Was passiert mit meinen Daten? Kann ich das als Leie überhaupt? Wie kann ich mein zuhause präzise und einfach automatisieren um mein Leben so zu vereinfachen, wie ich es möchte? Das sind Fragen, die sich Menschen stellen, bevor sie sich ein Smart Home System aufbauen. Diesen Problemen widmet sich das Smart Home Kit: Hubi.'"
-    ></videoText>
   </div>
 </template>
 
@@ -89,6 +64,7 @@ import textPicture from "~/components/templates/textPicture.vue";
 import iconPattern from "~/components/templates/iconPattern.vue";
 import textParagraph from "~/components/templates/textParagraph.vue";
 import videoText from "~/components/templates/videoText.vue";
+import textVideo from "~/components/templates/textVideo.vue";
 
 export default {
   name: "hubi",
@@ -99,7 +75,8 @@ export default {
     iconPattern,
     textPicture,
     textParagraph,
-    videoText
+    videoText,
+    textVideo
   },
 };
 </script>
