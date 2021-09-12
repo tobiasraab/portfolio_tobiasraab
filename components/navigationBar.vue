@@ -14,7 +14,7 @@
           >
         </div>
         <h3 class="navTopMenu-currentSite hidden md:block">
-          {{ this.bigScreenCurrentSite }}
+          {{ this.showCurrentSite }}
         </h3>
       </div>
       <!--menu icon if screen < sm -->
@@ -26,7 +26,7 @@
         <img class="nav-toggle-icon" src="./../assets/icons/navbarIcon.svg" />
       </div>
       <!-- current link if screen < sm -->
-      <h1 class="inline-flex sm:hidden">{{ this.currentSite }}</h1>
+      <h3 class="navSideMenu-currentSite inline-flex sm:hidden">{{ this.showCurrentSite }}</h3>
     </div>
     <!--side menu -->
     <div class="block sm:hidden navActiveSideLink" id="navSideMenu">
@@ -59,37 +59,25 @@ export default {
     return {
       navSideMenuActiv: false,
       currentSite: this.$router.currentRoute.path,
-      bigScreenCurrentSite: undefined,
+      showCurrentSite: undefined
     };
   },
   mounted() {
-    this.bigScreenCurrentSite = undefined;
     if (this.currentSite == "/projects/waermepumpe") {
-      this.currentSite = "/projects/Wärmepumpe";
-      this.bigScreenCurrentSite = "Wärmepumpe";
+      this.showCurrentSite = "Wärmepumpe";
     } else if (this.currentSite == "/projects/hubi") {
-      this.currentSite = "/projects/Hubi";
-      this.bigScreenCurrentSite = "HUBI";
+      this.showCurrentSite = "HUBI";
     } else if (this.currentSite == "/projects/firewatch") {
-      this.currentSite = "/projects/Firewatch";
-      this.bigScreenCurrentSite = "Firewatch";
+      this.showCurrentSite = "Firewatch";
     } else if (this.currentSite == "/projects/pflege") {
-      this.currentSite = "/projects/Pflege";
-      this.bigScreenCurrentSite = "Pflege";
-    } else if (
-      this.bigScreenCurrentSite == "/projects" ||
-      "/about" ||
-      "/contact" ||
-      "/"
-    ) {
-      this.bigScreenCurrentSite = "";
+      this.showCurrentSite = "Pflege";
+    } else {
+      this.showCurrentSite = "";
     }
 
     const icon = document.getElementById("navMenuIconContainer");
     const sideMenu = document.getElementById("navSideMenu");
-    const sideMenuLinkContainer = document.getElementById(
-      "navSideLinksContainer"
-    );
+    const sideMenuLinkContainer = document.getElementById("navSideLinksContainer");
 
     window.addEventListener("resize", (e) => {
       if (window.innerWidth >= 420) {
@@ -172,10 +160,18 @@ export default {
 <style scoped>
 .navTopMenu-currentSite {
   color: white;
-  font-family: "silkamedium";
+  font-family: "silkamedium", sans-serif;
   font-size: 18px;
   line-height: 64px;
   margin-right: 48px;
+}
+.navSideMenu-currentSite{
+  position: absolute;
+  color: white;
+  font-family: "silkamedium", sans-serif;
+  font-size: 18px;
+  line-height: 64px;
+  right: 48px;
 }
 header {
   display: inline-flex;
@@ -207,7 +203,7 @@ header {
   height: 64px;
   padding: 0 16px;
 
-  font-family: "silkaregular";
+  font-family: "silkaregular", sans-serif;
   font-size: 18px;
   line-height: 64px;
 
@@ -244,7 +240,7 @@ h1 {
 
   margin-left: 8px;
 
-  font-family: "silkaregular";
+  font-family: "silkaregular", sans-serif;
   font-size: 18px;
   line-height: 64px;
 
@@ -281,7 +277,7 @@ h1 {
 
   height: 64px;
 
-  font-family: "silkaregular";
+  font-family: "silkaregular", sans-serif;
   font-size: 18px;
   line-height: 64px;
 
