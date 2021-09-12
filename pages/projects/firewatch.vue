@@ -41,7 +41,7 @@
       :altTag="'System Aufbau Visualiserung'"
     ></pictureItem>
     <videoTemplate
-      :src="'https://www.youtube-nocookie.com/embed/7PGhk9Zf-bI?&autoplay=1&mute=1&loop=1&playlist=7PGhk9Zf-bI'"
+      :src="require('@/assets/videos/firewatch_preview.mp4')"
       :headline="'UX/UI (Prototype)'"
     ></videoTemplate>
   </div>
