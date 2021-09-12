@@ -1,5 +1,5 @@
 <template>
-  <div class="px-4 sm:px-8 md:px-16 mb-32 md:mb-48 m-auto max-w-screen-2xl">
+  <div class="px-4 sm:px-8 md:px-16 mb-32 md:mb-48 xl:mb-64 m-auto max-w-screen-2xl">
     <div class="
         textPicture-template
         flex flex-col-reverse
@@ -8,7 +8,7 @@
         grid-cols-2 grid-rows-1
       ">
       <div class="video-container">
-        <video class="video" controls autoplay muted>
+        <video class="video" controls autoplay muted loop>
           <source v-bind:src="this.src" type="video/mp4">
         </video>
       </div>
@@ -22,7 +22,7 @@
 
 <script>
   export default {
-    name: "textPicture",
+    name: "videoText",
     props: ["src", "headline", "text"],
   };
 

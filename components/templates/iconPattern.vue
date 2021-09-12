@@ -1,5 +1,5 @@
 <template>
-  <div class="productValues-template mb-32 md:mb-48">
+  <div class="productValues-template mb-32 md:mb-48 xl:mb-64">
     <h1>{{this.headTitle}}</h1>
     <div
       class="

@@ -1,5 +1,5 @@
 <template>
-  <div class="mb-32 md:mb-48">
+  <div class="mb-32 md:mb-48 xl:mb-64">
     <h2
       class="quote-container leading-10 p-16 text-2xl md:text-3xl"
       v-html="this.text"

@@ -1,5 +1,5 @@
 <template>
-  <div class="px-4 sm:px-8 md:px-16 mb-32 md:mb-48 m-auto max-w-screen-2xl">
+  <div class="px-4 sm:px-8 md:px-16 mb-32 md:mb-48 xl:mb-64 m-auto max-w-screen-2xl">
     <div
       class="
         textPicture-template
