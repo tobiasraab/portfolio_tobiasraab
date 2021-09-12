@@ -14,7 +14,7 @@
     <textPicture
       :headline="'Need'"
       :imageSource="require('@/assets/images/waermepumpe/image6.png')"
-      :text="'Das entworfene Dashboard hilft dem Nutzer seinen Energiehaushalt im Auge zu behalten. Er bekommt historische Daten zur Effektifität seiner Wärmepumpe angezeigt usw.'"
+      :text="'Wie viel Leistung bringt meine Wärmepumpe? Wie viel Strom hat meine Wärmepumpe letztes Jahr im vergleich zu diesem jahr verbraucht? Gibt es eine Möglichkeit auf alle relevanten Ddaten schnell und einfach zuzugreifen?<br><br>Die Antwort auf diese Fragen bietet das entwickelte Dashboard.'"
       :imageCaption="''"
       :altTag="'User Interface einer Wärmepumpe'"
     ></textPicture>
