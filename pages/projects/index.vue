@@ -19,15 +19,15 @@
         :label="'UX/UI Design'"
         :image="require('@/assets/images/waermepumpe/image4.png')"
         :altTag="'lorem ipsum'"
-        :description="'Wärmepumpen bieten eine nachhaltige Möglichkeit das eigene Haus mit Energie zu versorgen. Die Nutzung einer Wäemepumpe bringt jedoch auch Herausforderungen mit sich. Um diese zu Überwinden wurde das folgende Dashboard entwickelt'"
+        :description="'Dashboard, mit dessen Hilfe Hausbesitzer alle relevanten Daten über die Leistung ihrer Wärmepumpe einsehen können.'"
         :overlayId="'overlayId1'"
         :linkedPath="'/projects/waermepumpe'"
       ></projectCard>
       <projectCard
         :title="'HUBI - Education Kit'"
         :label="'Smart Home'"
-        :image="require('@/assets/images/testImg2.jpg')"
-        :description="'Das ist die nächste tolle Beschreibung. Ich bin krass, gebt mir noch mehr Geld'"
+        :image="require('@/assets/images/hubi/titel.png')"
+        :description="'Smart Home Kit, mit welchem der Nutzer Grundlagen des Programmierens erlernt und einen Blick auf den unsichtbaren Datenverkahr im eigenen Zuhause werfen kann.'"
         :overlayId="'overlayId2'"
         :linkedPath="'/projects/hubi'"
       ></projectCard>
@@ -35,7 +35,7 @@
         :title="'Fire Watch'"
         :label="'IoT System'"
         :image="require('@/assets/images/firewatch/firewatch_thumbnail.jpg')"
-        :description="'Das ist die nächste tolle Beschreibung. Ich bin krass, gebt mir noch mehr Geld'"
+        :description="'System für die Überwachung von Waldbrandrisikogebieten.'"
         :overlayId="'overlayId3'"
         :linkedPath="'/projects/firewatch'"
       ></projectCard>
