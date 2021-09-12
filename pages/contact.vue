@@ -1,8 +1,8 @@
 <template>
   <div>
     <div class="quote-container">
-      <h1>Tobias Raab</h1>
-      <h2>tbs.raab@gmail.com</h2>
+      <h1 class="text-3xl md:text-4xl">Tobias Raab</h1>
+      <h2 class="text-base md:text-xl md:mt-8">tbs.raab@gmail.com</h2>
     </div>
     <div class="p-12 m-auto max-w-screen-2xl text-template">
       <a href="mailto:tbs.raab@gmail.com">
@@ -39,7 +39,7 @@ export default {
 
   text-align: center;
 
-  font-family: "silkalight";
+  font-family: "silkalight", sans-serif;
   font-size: 32px;
 
   background-color: #000000;
@@ -50,7 +50,7 @@ button {
   background-color: #0b2027;
   color: white;
   padding-left: 12px;
-  font-family: "silkaregular";
+  font-family: "silkaregular", sans-serif;
   width: 224px;
   height: 44px;
   text-align: left;
@@ -67,14 +67,12 @@ a {
 
 }
 h1 {
-  font-family: "silkamedium";
-  font-size: 32px;
+  font-family: "silkamedium", sans-serif;
   color: #ffffff;
   margin-bottom: 24px;
 }
 h2 {
-  font-family: "silkalight";
-  font-size: 24px;
+  font-family: "silkalight", sans-serif;
   color: #ffffff;
 }
 </style>
