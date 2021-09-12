@@ -2,16 +2,16 @@
 <!-- TODO: -->
 <!-- Use Video tag not youtube!!!!!! -->
   <div class="px-4 sm:px-8 md:px-16 mb-32 md:mb-48 m-auto max-w-screen-2xl video-template">
-    <h2 class="text-2xl md:text-3xl mb-4 md:mb-8">{{ this.headline }}</h2>
+    <h2 v-if="this.headline" class="text-2xl md:text-3xl mb-4 md:mb-8">{{ this.headline }}</h2>
     <div class="video-container">
-      <iframe
+      <video
         class="video"
-        width="420"
-        height="315"
-        v-bind:src="this.src"
-        frameborder="0"
-        allowfullscreen
-      ></iframe>
+        controls
+        autoplay
+        muted
+      >
+        <source v-bind:src="this.src" type="video/mp4">
+      </video>
     </div>
   </div>
 </template>
@@ -30,7 +30,7 @@ export default {
 h2 {
   z-index: 3;
   position: relative;
-  font-family: "silkamedium";
+  font-family: "silkamedium", sans-serif;
   color: #061216;
 }
 .video {
