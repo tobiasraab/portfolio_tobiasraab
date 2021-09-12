@@ -1,5 +1,5 @@
 <template>
-  <div class="productValues-template">
+  <div class="productValues-template mb-32 md:mb-48">
     <h1>{{this.headTitle}}</h1>
     <div
       class="
@@ -82,7 +82,7 @@ h1 {
   width: 100%;
   font-size: 32px;
   text-align: center;
-  font-family: "silkalight";
+  font-family: "silkalight", sans-serif;
 }
 h3 {
   margin-top: 16px;

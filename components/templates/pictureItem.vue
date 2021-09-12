@@ -25,7 +25,7 @@ figcaption{
   z-index: 3;
 }
 div > h2 {
-  font-family: "silkamedium";
+  font-family: "silkamedium", sans-serif;
   color: #061216;
 }
 img {

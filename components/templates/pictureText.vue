@@ -15,7 +15,7 @@
       </figure>
       <div class="textPicture-content-template row-start-1 col-start-2">
         <h2 class="text-xl md:text-3xl">{{ this.headline }}</h2>
-        <p class="text-base md:text-lg leading-6 md:leading-7 mt-2 md:mt-4">{{ this.text }}</p>
+        <p class="text-base md:text-lg leading-6 md:leading-7 mt-2 md:mt-4" v-html="this.text"></p>
       </div>
     </div>
   </div>
@@ -46,12 +46,12 @@ export default {
 }
 
 .textPicture-content-template > h2 {
-  font-family: "silkamedium";
+  font-family: "silkamedium", sans-serif;
   color: #061216;
 }
 
 .textPicture-content-template > p {
-  font-family: "silkaregular";
+  font-family: "silkaregular", sans-serif;
 }
 
 figcaption {

@@ -28,7 +28,7 @@ export default {
 
   text-align: center;
 
-  font-family: "silkalight";
+  font-family: "silkalight", sans-serif;
 
   background-color: #080808;
   color: #ffffff;

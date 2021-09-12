@@ -151,7 +151,7 @@
   ul {
     color: white;
     /* font-size: 16px; */
-    font-family: "silkalight";
+    font-family: "silkalight", sans-serif;
   }
 
 
@@ -214,7 +214,7 @@
   h1 {
     position: absolute;
     top: -80px;
-    font-family: "silkamedium";
+    font-family: "silkamedium", sans-serif;
     font-size: 32px;
     color: #061216;
     z-index: 5;
@@ -222,14 +222,14 @@
   }
 
   h3 {
-    font-family: "silkamedium";
+    font-family: "silkamedium", sans-serif;
     color: black;
     /* font-size: 16px; */
   }
 
   h2 {
     color: white;
-    font-family: "silkaregular";
+    font-family: "silkaregular", sans-serif;
     /* font-size: 18px; */
     width: 100%;
   }

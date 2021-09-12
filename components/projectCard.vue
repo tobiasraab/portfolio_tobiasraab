@@ -13,7 +13,6 @@
         v-bind:alt="this.altTag"
         v-on:load="imageLoaded"
       />
-
       <div class="project-card-text-container pr-4 pt-12 sm:pt-10">
         <h2 class="text-xs sm:text-sm">{{ this.label }}</h2>
         <h1 class="text-xl sm:text-2xl">{{ this.title }}</h1>
@@ -142,20 +141,20 @@ export default {
 .project-card-hover-description {
   padding: 2px;
 
-  font-family: "silkamedium";
-  font-size: 18px;
+  font-family: "silkamedium", sans-serif;
+  font-size: 16px;
   text-align: right;
 
   color: #0b2027;
 }
 
 h1 {
-  font-family: "silkaregular";
+  font-family: "silkaregular", sans-serif;
   /* font-size: 28px; */
 }
 
 h2 {
-  font-family: "silkalight";
+  font-family: "silkalight", sans-serif;
   /* font-size: 14px; */
 }
 </style>

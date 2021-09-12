@@ -26,7 +26,7 @@ export default {
   }
   .footer-link{
     margin: 0 8px;
-    font-family: 'silkaregular';
+    font-family: 'silkaregular', sans-serif;
     font-size: 13px;
   }
   .footer-container{
