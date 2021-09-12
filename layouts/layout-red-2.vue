@@ -104,13 +104,13 @@ export default {
 @import "./../assets/fonts/fontRoman.css";
 @import "./../assets/fonts/fontitalic.css";
 body {
-  font-family: "silkaregular";
+  font-family: "silkaregular", sans-serif;
 }
 .footer-template {
   position: relative;
   bottom: 0%;
   left: 0%;
-  z-index: 4;
+  z-index: 2;
 }
 .layoutNuxt {
   min-height: calc(100vh - 28px - 48px);

@@ -79,7 +79,7 @@ import siteFooter from "../components/siteFooter.vue";
 export default {
   components: {
     navigationBar,
-    siteFooter,
+    siteFooter
   },
 };
 </script>
@@ -87,7 +87,7 @@ export default {
 @import "./../assets/fonts/fontRoman.css";
 @import "./../assets/fonts/fontitalic.css";
 body {
-  font-family: "silkaregular";
+  font-family: "silkaregular", sans-serif;
 }
 .footer-template {
   position: relative;
