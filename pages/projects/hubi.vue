@@ -3,7 +3,7 @@
     <quote
       :backgroundColor="'#161616'"
       :color="'#ffffff'"
-      :text="'Wie funktioniert Smart Home?'"
+      :text="'Wie funktioniert ein Smart Home System?'"
     ></quote>
     <pictureText
       :headline="'Problem'"
@@ -22,6 +22,12 @@
       :src="require('@/assets/videos/hubi_uxui.mp4')"
       :text="'Damit dem Nutzer eine möglichst intuitive und verständliche Möglichkeit geboten werden kann sein Smart Home zu programmieren, wurde eine neue grafische Programmiersprache entwickelt. Diese basiert, ähnlich wie Node-RED, auf dem Prinzip von verschiedenen Knoten. Jedes steuerbare Gerät im Netzwerk wird als Knoten visualisert. Wenn es sich im einen Aktor handelt kann der Nutzer Daten an das Gerät senden. Wenn es sich bei dem Gerät um einen Sensor, zum Beispiel zur Überwachung der Temperatur, handelt, kann der Nutzer die empfangenen Daten in seine Programmierung integrieren. Mit verschiedenen Funktionen (if-Nodes, send-Nodes, loops) kann der Nutzer sein Smarthome individuell an seine Bedürfnisse anpassen.'"
     ></videoText>
+     <pictureItem
+      :headline="'Visual Programming Language (VPL)'"
+      :imageSource="require('@/assets/images/hubi/screen.png')"
+      :altTag="'Visual Programming Language Interface'"
+    >
+    </pictureItem>
     <textPicture
       :headline="'Hardware'"
       :imageSource="require('@/assets/images/hubi/hubihardware.png')"
@@ -32,7 +38,7 @@
     <pictureText
       :headline="'Software'"
       :imageSource="require('@/assets/images/hubi/backendCode.png')"
-      :text="'Das Backend besteht aus einem Node Server welcher auf dem Rapberry Pi gehostet wird. Da die graphische Programmieroberfläche mit dem Schwerpunkt Smarthome gestaltet wurde, gab es noch keine existierende Software, welche den gestelten Anforderungen gerecht wurde. Aufgrund dessen musste ein von Grund auf neues Programm entwickelt werden. Dieses bildet das Gehirn des Systems. Von ihm werden die vom Nutzer erstellten Flows zur Heimautomation verwaltet und umgesetzt. Hierfür genutze technologien sind unter anderem: Express.js, socket.io, mqtt. Umgesetzt mit JavaScript auf Basis von Node.js.<br>Das Frontend ist mit vue.js umgesetzt und kommuniziert über eine Rest Schnittstelle und socket.io mit dem Backend.'"
+      :text="'Das Backend besteht aus einem Node Server welcher auf dem Rapberry Pi gehostet wird. Da die graphische Programmieroberfläche mit dem Schwerpunkt Smarthome gestaltet wurde, gab es noch keine existierende Software, welche den gestelten Anforderungen gerecht wurde. Aufgrund dessen musste ein von Grund auf neues Programm entwickelt werden. Dieses bildet das Gehirn des Systems. Von ihm werden die vom Nutzer erstellten Flows zur Heimautomation verwaltet und umgesetzt. Hierfür genutze technologien sind unter anderem: Express.js, socket.io, mqtt. Umgesetzt mit JavaScript auf Basis von Node.js. Das Frontend ist mit vue.js umgesetzt und kommuniziert über eine Rest Schnittstelle und socket.io mit dem Backend.'"
       :imageCaption="''"
       :altTag="'Node.js Backend Code'"
     ></pictureText>
@@ -65,6 +71,7 @@ import iconPattern from "~/components/templates/iconPattern.vue";
 import textParagraph from "~/components/templates/textParagraph.vue";
 import videoText from "~/components/templates/videoText.vue";
 import textVideo from "~/components/templates/textVideo.vue";
+import pictureItem from "~/components/templates/pictureItem.vue";
 
 export default {
   name: "hubi",
@@ -76,7 +83,8 @@ export default {
     textPicture,
     textParagraph,
     videoText,
-    textVideo
+    textVideo,
+    pictureItem
   },
 };
 </script>
