@@ -46,11 +46,11 @@ export default {
   methods: {
     mouseEnter() {
       document.getElementById(this.overlayId).style.clipPath =
-        "polygon(0 0% , 100% 0%, 100% 100%, 0 100%)";
+        "polygon(0 0% , 101% 0%, 101% 100%, 0 100%)";
     },
     mouseLeave() {
       document.getElementById(this.overlayId).style.clipPath =
-        "polygon(0 78.64% , 100% 70%, 100% 100%, 0 100%)";
+        "polygon(0 78.64% , 101% 70%, 101% 100%, 0 100%)";
     },
     imageLoaded() {
       this.loaded = true;
@@ -117,7 +117,7 @@ export default {
 
   text-align: right;
 
-  clip-path: polygon(0 32%, 100% 0, 100% 100%, 0 100%);
+  clip-path: polygon(0 32%, 101% 0, 101% 100%, 0 100%);
   background-color: #1b4e5f;
 }
 
@@ -133,7 +133,7 @@ export default {
   padding: 12px;
 
   transition-duration: 0.6s;
-  clip-path: polygon(0 78.64%, 100% 70%, 100% 100%, 0 100%);
+  clip-path: polygon(0 78.64%, 101% 70%, 101% 100%, 0 100%);
 
   background-color: rgba(255, 230, 0, 0.95);
 }
