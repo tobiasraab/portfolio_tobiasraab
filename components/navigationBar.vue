@@ -171,7 +171,7 @@ export default {
   font-family: "silkamedium", sans-serif;
   font-size: 18px;
   line-height: 64px;
-  right: 48px;
+  right: 24px;
 }
 header {
   display: inline-flex;
