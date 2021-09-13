@@ -26,7 +26,7 @@
       <projectCard
         :title="'HUBI - Education Kit'"
         :label="'Smart Home'"
-        :image="require('@/assets/images/hubi/titel.png')"
+        :image="require('@/assets/images/hubi/hubi-titel.jpg')"
         :description="'Smart Home Kit, mit welchem der Nutzer Grundlagen des Programmierens erlernt und einen Blick auf den unsichtbaren Datenverkahr im eigenen Zuhause werfen kann.'"
         :overlayId="'overlayId2'"
         :linkedPath="'/projects/hubi'"
@@ -34,7 +34,7 @@
       <projectCard
         :title="'Fire Watch'"
         :label="'IoT System'"
-        :image="require('@/assets/images/firewatch/firewatch_thumbnail.jpg')"
+        :image="require('@/assets/images/firewatch/sensorImg1.jpg')"
         :description="'System für die Überwachung von Waldbrandrisikogebieten.'"
         :overlayId="'overlayId3'"
         :linkedPath="'/projects/firewatch'"
