@@ -157,7 +157,6 @@
   export default {
     name: "datenschutzerklaerung",
     layout: "layout-red",
-    components: {},
   };
 
 </script>
@@ -172,7 +171,7 @@
     font-size: 32px;
     color: #061216;
   }
-
+  
   h2 {
     font-family: "silkamedium";
     font-size: 24px;
@@ -186,7 +185,7 @@
     color: #061216;
     margin-top: 24px;
   }
-
+  
   p {
     margin-top: 8px;
     font-family: "silkaregular";
