@@ -7,40 +7,40 @@
     ></quote>
     <pictureItem
       :headline="''"
-      :imageSource="require('@/assets/images/waermepumpe/image1.png')"
+      :imageSource="require('@/assets/images/waermepumpe/waermepumpe-laptop.jpg')"
       :imageCaption="''"
       :altTag="'Dashboard einer Wärmepumpe'"
     ></pictureItem>
     <textPicture
-      :headline="'Need'"
-      :imageSource="require('@/assets/images/waermepumpe/image6.png')"
-      :text="'Wie viel Leistung bringt meine Wärmepumpe? Wie viel Strom hat meine Wärmepumpe letztes Jahr im vergleich zu diesem jahr verbraucht? Gibt es eine Möglichkeit auf alle relevanten Ddaten schnell und einfach zuzugreifen?<br><br>Die Antwort auf diese Fragen bietet das entwickelte Dashboard.'"
+      :headline="'Problem'"
+      :imageSource="require('@/assets/images/waermepumpe/waermepumpe-dashboard.jpg')"
+      :text="'Wie viel Leistung bringt meine Wärmepumpe? Wie viel Strom hat meine Wärmepumpe letztes Jahr im Vergleich zu diesem jahr verbraucht? Gibt es eine Möglichkeit auf alle relevanten Daten schnell und einfach zuzugreifen?<br><br>Die Antworten auf diese Fragen bringt das entwickelte Dashboard.'"
       :imageCaption="''"
       :altTag="'User Interface einer Wärmepumpe'"
     ></textPicture>
     <pictureText
-      :headline="'Energieumsatz'"
-      :imageSource="require('@/assets/images/waermepumpe/image2.png')"
-      :text="'In einer Wärmepumpe wird mittels Strom Wärmeenergie gefördert. Je mehr Wärmeenergie aus dem eingespeisten Strom resultiert, desto effizienter ist die Wärmepumpe. Die Ansicht bietet einen intuitiven und klaren Überblick über die verschiedenen Faktoren. In der oberen Hälfte der Darstellung wird der eingespeiste Strom in kWh angegeben. Die Effektivität der Wärmepumpe wird in dem Faktor gemessen, um den sich die eingespeißte Energie erhöht. Dieser wird zwischen den zwei Säulendiagrammen angegeben. In der unteren Hälfte wird die gewonnene Wärmeenergie in rot visualisert.'"
+       :headline="'Energie-Ansicht'"
+      :imageSource="require('@/assets/images/waermepumpe/waermepumpe-dashboard-2.jpg')"
+      :text="'In einer Wärmepumpe wird mittels Strom Wärmeenergie gefördert. Je mehr Wärmeenergie aus dem eingespeisten Strom resultiert, desto effizienter ist die Wärmepumpe. Die Energie-Ansicht bietet einen intuitiven und klaren Überblick über die verschiedenen Faktoren. In der oberen Hälfte der Darstellung wird der eingespeiste Strom in kWh angegeben. Die Effektivität der Wärmepumpe wird in dem Faktor gemessen, um den sich die eingespeißte energie nach der Wärmeförderung erhöht. Dieser Faktor (Arbeitszahl) wird zwischen den zwei Säulendiagrammen angegeben. In der unteren Hälfte wird die gewonnene Wärmeenergie in rot visualisert.'"
       :imageCaption="''"
       :altTag="'Leistungsverlauf einer Wärmepumpe'"
     ></pictureText>
     <pictureText
-      :headline="'Temperatur'"
-      :imageSource="require('@/assets/images/waermepumpe/image5.png')"
-      :text="'Die Außen- bzw. Bodentemperatur spielt für den Umsatz, den die Wärmepumpe erziehlt, eine wichtige Rolle. Aufgrund dessen kann der Nutzer sich historische Temperaturdaten in seinem Dashboard anzeigen lassen. So kann dieser, aufgrund der Daten aus den vorherigen Jahren, besser abschätzen, wie viel Kosten die Wärmepumpe nächsten Winter vorraussichtlich verursachen wird.'"
+      :headline="'Temperatur-Ansicht'"
+      :imageSource="require('@/assets/images/waermepumpe/waermepumpe-temp.jpg')"
+      :text="'Die Außen- bzw. Bodentemperatur spielt für den Umsatz den die Wärmepumpe erziehlt eine wichtige Rolle. Aufgrund dessen kann der Nutzer sich auch historische Temperaturdaten in seinem Dashboard anzeigen lassen. So kann dieser, aufgrund der Daten aus den vorherigen Jahren, besser abschätzen, wie viel Kosten die Wärmepumpe nächsten Winter vorraussichtlich verursachen wird.'"
       :imageCaption="''"
       :altTag="'Temperaturaufzeichung eines Jahres'"
     ></pictureText>
     <pictureItem
       :headline="'Mid-Fi Variantenbildung'"
-      :imageSource="require('@/assets/images/waermepumpe/image8.png')"
+      :imageSource="require('@/assets/images/waermepumpe/waermepumpe-lowfi.jpg')"
       :imageCaption="''"
       :altTag="'Variantenbildung eines Designs'"
     ></pictureItem>
     <pictureItem
       :headline="'High-Fi Variantenbildung'"
-      :imageSource="require('@/assets/images/waermepumpe/image7.png')"
+      :imageSource="require('@/assets/images/waermepumpe/waermepumpe-highfi.jpg')"
       :imageCaption="''"
       :altTag="'High-Fi Variantenbildung'"
     ></pictureItem>
