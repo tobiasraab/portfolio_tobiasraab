@@ -13,7 +13,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
   footer {
     height: 28px;
     position: relative;
