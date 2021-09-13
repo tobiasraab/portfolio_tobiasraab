@@ -1,5 +1,5 @@
 <template>
-  <div class="m-auto max-w-screen-2xl px-4 sm:px-8 md:px-16 text-template impressum-container">
+  <div class="m-auto max-w-screen-2xl px-4 sm:px-8 md:px-16 mb-32 impressum-container">
     <h1>Impressum</h1>
     <h2>Angaben gemäß § 5 TMG:</h2>
     <p><br>Tobias Raab</p>
@@ -35,6 +35,7 @@
     font-size: 18px;
 
     color: #000000;
+    z-index: 3;
   }
 
   h1 {
