@@ -88,6 +88,7 @@ export default {
 
 body {
   font-family: "silkaregular", sans-serif;
+  color: #080808;
 }
 .footer-template {
   position: relative;
