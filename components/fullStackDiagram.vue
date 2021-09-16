@@ -87,7 +87,7 @@
             <h2 class="text-sm lg:text-base xl:text-lg">Hardware</h2>
             <ul class="hidden xl:block text-xs 2xl:text-base">
               <li>Physical Computing</li>
-              <li>&nbsp;</li>
+              <li>C++</li>
             </ul>
           </div>
           <div class="
