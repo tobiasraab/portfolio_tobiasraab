@@ -3,7 +3,7 @@
     <quote
       :backgroundColor="'#161616'"
       :color="'#ffffff'"
-      :text="'Camp Creek Road Fire:<br>85 Tote'"
+      :text="'Camp Creek Road Fire:<br><br>85 Tote'"
       :origin="'Quelle: Government of California (CAL FIRE)'"
     ></quote>
     <textPicture
