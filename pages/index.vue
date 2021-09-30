@@ -26,20 +26,20 @@
       :icon7="require('@/assets/icons/bot.svg')"
       :altTag7="'Hardware Prototyping'"
     ></iconPattern>
-    <textPicture
+    <pictureText
       :headline="'Tobias Raab'"
-      :imageSource="require('@/assets/images/about/test.jpg')"
+      :imageSource="require('@/assets/images/about/tobiasraab-profile.jpg')"
       :text="'Ich bin IoT-Designer und Creative Technologist aus Schwäbisch Gmünd. Aktuell studiere ich an der Hochschule für Gestaltung Schwäbisch Gmünd \'Internet der Dinge - Gestaltung vernetzter Systeme B.A.\'<br>Mein Arbeitsprozess ist geprägt von Design Thinking, sowie dem Ehrgeiz sinnstiftende Produkte zu entwickeln. Dafür bringe ich weitreichende Kenntnisse im Bereich nutzerzentriertes Design, sowie vernetzte Hard- und Softwareentwicklung ein.'"
       :imageCaption="''"
       :altTag="''"
-    ></textPicture>
+    ></pictureText>
   </div>
 </template>
 
 <script>
 import fullStackDiagram from "~/components/fullStackDiagram.vue";
 import textParagraph from "~/components/templates/textParagraph.vue";
-import textPicture from "~/components/templates/textPicture.vue";
+import pictureText from "~/components/templates/pictureText.vue";
 import iconPattern from "~/components/templates/iconPattern.vue"
 
 export default {
@@ -48,7 +48,7 @@ export default {
   components: {
     fullStackDiagram,
     textParagraph,
-    textPicture,
+    pictureText,
     iconPattern
   },
 };
