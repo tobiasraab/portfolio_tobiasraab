@@ -34,7 +34,7 @@
       <projectCard
         :title="'Fire Watch'"
         :label="'IoT System'"
-        :image="require('@/assets/images/firewatch/sensorImg1.jpg')"
+        :image="require('@/assets/images/firewatch/sensorImg4.jpg')"
         :description="'System für die Überwachung von Waldbrandrisikogebieten.'"
         :overlayId="'overlayId3'"
         :linkedPath="'/projects/firewatch'"
