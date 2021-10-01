@@ -14,7 +14,7 @@ export default {
       {
         hid: 'description',
         name: 'description',
-        content: 'IoT-Designer und Creative Technologist aus Schwäbisch Gmünd. Sinnsitftendes Design bei dem der Nutzer im Mittelpunkt steht.'
+        content: 'IoT-Designer und Creative Technologist aus Schwäbisch Gmünd. Sinnstiftendes Design bei dem der Nutzer im Mittelpunkt steht.'
       },
       { name: 'format-detection', content: 'telephone=no' },
       { property: "og:Tobias Raab Design", content: "IoT-Designer und Creative Technologist aus Schwäbisch Gmünd."}
