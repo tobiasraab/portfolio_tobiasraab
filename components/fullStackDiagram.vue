@@ -217,7 +217,7 @@
     font-family: "silkamedium", sans-serif;
     font-size: 32px;
     color: #061216;
-    z-index: 5;
+    z-index: 2;
     margin-left: 44px;
   }
 
