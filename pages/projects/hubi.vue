@@ -47,7 +47,7 @@
       :imageSource="require('@/assets/images/hubi/hubi-visual.png')"
       :text="'Das Maskottchen unterstützt den Nutzer inerhalb der Anwendung mit hilfreichen Tipps und Erklärungen, sowie einem Tutorial zum Kennen lernen der verschiedenen Funktionen. Die Verpackung enthält verschiedene Motive, welche den Aspekt Netzwerktechnik visualiserien. Datenpakete werden hierbei verbildlicht zwischen Sechsecken hin und her geschickt.'"
       :imageCaption="''"
-      :altTag="'Design System'"
+      :altTag="'Visual System'"
     ></textPicture>
     <iconPattern
       :headTitle="'Product Values'"
@@ -68,7 +68,6 @@ import quote from "~/components/templates/quote.vue";
 import pictureText from "~/components/templates/pictureText.vue";
 import textPicture from "~/components/templates/textPicture.vue";
 import iconPattern from "~/components/templates/iconPattern.vue";
-import textParagraph from "~/components/templates/textParagraph.vue";
 import videoText from "~/components/templates/videoText.vue";
 import textVideo from "~/components/templates/textVideo.vue";
 import pictureItem from "~/components/templates/pictureItem.vue";
@@ -81,7 +80,6 @@ export default {
     pictureText,
     iconPattern,
     textPicture,
-    textParagraph,
     videoText,
     textVideo,
     pictureItem
@@ -90,17 +88,4 @@ export default {
 </script>
 
 <style scoped>
-.value-container {
-  width: 100%;
-  height: 40vh;
-  background-color: #161616;
-  color: #ffffff;
-  padding: 32px;
-}
-.value-container > h2 {
-  width: 100%;
-  text-align: center;
-  font-family: "silkalight";
-  font-size: 32px;
-}
 </style>
