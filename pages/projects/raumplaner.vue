@@ -13,7 +13,7 @@
     <textPicture
       :headline="'Design System'"
       :imageSource="require('@/assets/images/raumplaner/design-system.jpg')"
-      :text="'Variantenbildung und die Beschäftigung mit bestehenden Systemen (Material, Carbon, Polaris), resultierte im erstellten Design System, welches von der App genutzt wird'"
+      :text="'Variantenbildung und die Beschäftigung mit bestehenden Systemen (Material, Carbon, Polaris), resultierte im erstellten Design System, welches von der App genutzt wird.'"
       :imageCaption="''"
       :altTag="'Design System'"
     ></textPicture>

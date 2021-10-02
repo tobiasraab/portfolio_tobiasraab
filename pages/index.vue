@@ -29,7 +29,7 @@
     <pictureText
       :headline="'Tobias Raab'"
       :imageSource="require('@/assets/images/about/tobiasraab-profile.jpg')"
-      :text="'Ich bin IoT-Designer und Creative Technologist aus Schwäbisch Gmünd. Aktuell studiere ich an der Hochschule für Gestaltung Schwäbisch Gmünd \'Internet der Dinge - Gestaltung vernetzter Systeme B.A.\'<br>Mein Arbeitsprozess ist geprägt von Design Thinking, sowie dem Ehrgeiz, sinnstiftende Produkte zu entwickeln. Dafür bringe ich weitreichende Kenntnisse im Bereich nutzerzentriertes Design, sowie vernetzte Hard- und Softwareentwicklung ein.'"
+      :text="'Ich bin IoT-Designer und Creative Technologist aus Schwäbisch Gmünd. Aktuell studiere ich an der Hochschule für Gestaltung Schwäbisch Gmünd \'Internet der Dinge - Gestaltung vernetzter Systeme B.A.\'<br><br>Mein Arbeitsprozess ist geprägt von Design Thinking, sowie dem Ehrgeiz, sinnstiftende Produkte zu entwickeln. Dafür bringe ich weitreichende Kenntnisse im Bereich nutzerzentriertes Design, sowie vernetzte Hard- und Softwareentwicklung ein.'"
       :imageCaption="''"
       :altTag="''"
     ></pictureText>
