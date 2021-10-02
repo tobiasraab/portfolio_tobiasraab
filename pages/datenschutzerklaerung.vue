@@ -164,6 +164,13 @@
 <style scoped>
   .datenschutz-template{
     position: relative;
+
+    text-align: left;
+
+    font-family: "silkaregular";
+    font-size: 18px;
+
+    color: #000000;
     z-index: 3;
   }
   h1 {
