@@ -3,7 +3,7 @@
     <textParagraph
       class="mt-4 md:mt-16"
       :headline="'Raumplaner für Hochschulen'"
-      :text="'Aufgrund der Coronapandemie können nur eine bestimmte Anzahl an Menschen zur selben Zeit in einen Raum. Um eine problemlose Organisation der Raumbuchung und eine Nachverfolgung der Kontakte zu gewährleisten wurde diese Smartphone Anwendung designed. Die vorgestellte Raumbuchungsapp ermöglicht es dem Nutzer sich Zeitslots in verschiedenen Räumen zu buchen, um auch in Zeiten der Pandemie nicht auf die Ausstattung - z.B von Fotolaboren - verzichten zu müssen.'"
+      :text="'Während der Coronapandemie können nur eine bestimmte Anzahl an Menschen zur selben Zeit in einen Raum. Um eine problemlose Organisation der Raumbuchung und eine Nachverfolgung der Kontakte zu gewährleisten, wurde diese Smartphone Anwendung designed. Die vorgestellte Raumbuchungsapp ermöglicht es dem Nutzer sich Zeitslots in verschiedenen Räumen zu buchen, um auch in Zeiten der Pandemie nicht auf die Ausstattung - z.B von Fotolaboren - verzichten zu müssen.'"
     ></textParagraph>
     <videoText
       :headline="'Prototype'"
@@ -13,7 +13,7 @@
     <textPicture
       :headline="'Design System'"
       :imageSource="require('@/assets/images/raumplaner/design-system.jpg')"
-      :text="'Variantenbildung, sowie die Beschäftigung mit bestehenden Systemen (Material, Carbon, Polaris), resultierte im erstellten Design System, welches von der App genutzt wird'"
+      :text="'Variantenbildung und die Beschäftigung mit bestehenden Systemen (Material, Carbon, Polaris), resultierte im erstellten Design System, welches von der App genutzt wird'"
       :imageCaption="''"
       :altTag="'Design System'"
     ></textPicture>
