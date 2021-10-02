@@ -17,7 +17,7 @@
     ></textPicture>
     <pictureText
       :imageSource="
-        require('~/assets/images/firewatch/sensorImg4.jpg')
+        require('~/assets/images/firewatch/sensor.jpg')
       "
       :headline="'Sensorstation'"
        :text="'Die Sensorstation wird im Waldboden vergraben, um darin Messungen in verschiedenen Tiefen vorzunehmen. Gemessen werden Bodentemperatur und -feuchtigkeit in der Streuschicht, sowie der Humusschicht. Die gesammelten Daten werden über ein LoRaWAN Modul versendet, um anschließend in einer Datenbank gespeichert zu werden. Die für den Betrieb der Sensorstation benötigte Energie wird für den Prototyp über einen Akku sicher gestellt. Abhängig von der Lage vor Ort kann das System auch um eine Wind- oder Solareinheit weiterentwickelt werden.'"
