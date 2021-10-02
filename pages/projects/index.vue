@@ -34,10 +34,18 @@
       <projectCard
         :title="'Fire Watch'"
         :label="'IoT System'"
-        :image="require('@/assets/images/firewatch/sensorImg4.jpg')"
+        :image="require('@/assets/images/firewatch/matt-howard-eAKDzK4lo4o-unsplash2.jpg')"
         :description="'System für die Überwachung von Waldbrandrisikogebieten.'"
         :overlayId="'overlayId3'"
         :linkedPath="'/projects/firewatch'"
+      ></projectCard>
+      <projectCard
+        :title="'Raumplaner'"
+        :label="'UX/UI Design'"
+        :image="require('@/assets/images/raumplaner/raumplaner-title.jpg')"
+        :description="'App zur Buchung von Räumen.'"
+        :overlayId="'overlayId4'"
+        :linkedPath="'/projects/raumplaner'"
       ></projectCard>
     </div>
   </div>
