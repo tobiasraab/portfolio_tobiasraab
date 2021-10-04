@@ -143,7 +143,7 @@ export default {
 
   font-family: "silkamedium", sans-serif;
   font-size: 16px;
-  text-align: right;
+  text-align: left;
 
   color: #0b2027;
 }
