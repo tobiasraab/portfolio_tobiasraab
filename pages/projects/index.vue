@@ -43,9 +43,17 @@
         :title="'Raumplaner'"
         :label="'UX/UI Design'"
         :image="require('@/assets/images/raumplaner/raumplaner-title.jpg')"
-        :description="'Eine App, mit welcher Zeitslots in Räumen gebucht werden können. Dadurch kann eine organisierte Nutzung von Hochschuleinrichtungen ermöglicht werden.'"
+        :description="' App, für diee Buchung von Zeitslots in verschiedenen Räumen. Damit kann eine organisierte Nutzung von Hochschuleinrichtungen ermöglicht werden.'"
         :overlayId="'overlayId4'"
         :linkedPath="'/projects/raumplaner'"
+      ></projectCard>
+       <projectCard
+        :title="'Anwendungsanalyse'"
+        :label="'Research'"
+        :image="require('@/assets/images/appanalyse/kernwerk-title.jpg')"
+        :description="'Die Fitness-App \'Kernwerk\' wurde hier hinsichtliche der Möglichkeiten analysiert, die der Nutzer hat um sich durch die Anwendung zu navigieren. Die gewonnenen Erkentnisse können genutzt werden um die App für den Nutzer zu optimieren.'"
+        :overlayId="'overlayId5'"
+        :linkedPath="'/projects/appanalyse'"
       ></projectCard>
     </div>
   </div>
