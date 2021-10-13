@@ -43,7 +43,7 @@
         :title="'Raumplaner'"
         :label="'UX/UI Design'"
         :image="require('@/assets/images/raumplaner/raumplaner-title.jpg')"
-        :description="' App, für diee Buchung von Zeitslots in verschiedenen Räumen. Damit kann eine organisierte Nutzung von Hochschuleinrichtungen ermöglicht werden.'"
+        :description="' App, für die Buchung von Zeitslots in verschiedenen Räumen. Damit kann eine organisierte Nutzung von Hochschuleinrichtungen ermöglicht werden.'"
         :overlayId="'overlayId4'"
         :linkedPath="'/projects/raumplaner'"
       ></projectCard>
