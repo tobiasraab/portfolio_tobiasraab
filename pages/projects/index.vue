@@ -27,7 +27,7 @@
         :title="'HUBI - Education Kit'"
         :label="'Smart Home'"
         :image="require('@/assets/images/hubi/hubi-titel.jpg')"
-        :description="'Smart Home Kit, mit welchem der Nutzer Grundlagen des Programmierens erlernt und einen Blick auf den unsichtbaren Datenverkahr im eigenen Zuhause werfen kann.'"
+        :description="'Smart Home Kit, mit welchem der Nutzer Grundlagen des Programmierens erlernt und einen Blick auf den unsichtbaren Datenverkehr im eigenen Zuhause werfen kann.'"
         :overlayId="'overlayId2'"
         :linkedPath="'/projects/hubi'"
       ></projectCard>
