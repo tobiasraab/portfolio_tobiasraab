@@ -57,7 +57,7 @@
       ></projectCard>
       <projectCard
         :title="'Unsichtbares Sichtbar'"
-        :label="'Photography'"
+        :label="'Fotografie'"
         :image="require('@/assets/images/unsichtbar/kopfhoererhandy.png')"
         :description="'Dieses Fotoprojekt verfolgt das Thema \'Unsichtbares sichtbar machen\'. Dazu wurden die Vorgänge, die sich in und um elektronische Geräte herum abspielen, sichtbar gemacht.'"
         :overlayId="'overlayId6'"
