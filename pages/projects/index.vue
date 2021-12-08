@@ -47,13 +47,21 @@
         :overlayId="'overlayId4'"
         :linkedPath="'/projects/raumplaner'"
       ></projectCard>
-       <projectCard
+      <projectCard
         :title="'Anwendungsanalyse'"
         :label="'Research'"
         :image="require('@/assets/images/appanalyse/kernwerk-title.jpg')"
         :description="'Die Fitness-App \'Kernwerk\' wurde hier hinsichtliche der Möglichkeiten analysiert, die der Nutzer hat um sich durch die Anwendung zu navigieren. Die gewonnenen Erkentnisse können genutzt werden um die App für den Nutzer zu optimieren.'"
         :overlayId="'overlayId5'"
         :linkedPath="'/projects/appanalyse'"
+      ></projectCard>
+      <projectCard
+        :title="'Unsichtbares Sichtbar'"
+        :label="'Fotografie'"
+        :image="require('@/assets/images/unsichtbar/kopfhoererhandy.png')"
+        :description="'Dieses Fotoprojekt verfolgt das Thema \'Unsichtbares sichtbar machen\'. Dazu wurden die Vorgänge, die sich in und um elektronische Geräte herum abspielen, sichtbar gemacht.'"
+        :overlayId="'overlayId6'"
+        :linkedPath="'/projects/unsichtbar'"
       ></projectCard>
     </div>
   </div>
