@@ -1,6 +1,7 @@
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
+  ssr: true,
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -44,7 +45,11 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
+    '@nuxtjs/sitemap'
   ],
+  sitemap: {
+    hostname: 'https://raab-iot-design.de'
+  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
