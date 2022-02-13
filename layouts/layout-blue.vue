@@ -1,7 +1,6 @@
 <template>
   <div class="layout-template">
     <navigationBar class="nav-bar" />
-    <!-- 1B998B B1DDF1 1B998B 1B998B 0b2027 016FB9-->
     <Particles
       class="background-template"
       id="tsparticlesBlue"

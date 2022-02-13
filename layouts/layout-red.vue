@@ -1,7 +1,6 @@
 <template>
   <div class="layout-template">
     <navigationBar class="nav-bar" />
-    <!-- 9A031E FF482A D33F49 E06D06-->
     <Particles
       class="background-template"
       id="tsparticlesRed"
