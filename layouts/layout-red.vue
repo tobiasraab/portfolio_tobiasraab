@@ -48,7 +48,7 @@
             color: '#E06D06',
             distance: 300,
             enable: true,
-            opacity: 0.12,
+            opacity: 0.14,
             width: 1,
           },
           collisions: {
