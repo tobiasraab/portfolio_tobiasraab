@@ -52,9 +52,11 @@
       } else if (this.currentSite == "/projects/raumplaner") {
         this.showCurrentSite = "Raumplaner";
       } else if (this.currentSite == "/projects/unsichtbar") {
-        this.showCurrentSite = "Unsichtbares";
+        this.showCurrentSite = "(Un)sichtbar";
       } else if (this.currentSite == "/projects/appanalyse") {
         this.showCurrentSite = "Anwendungsanalyse";
+      } else if (this.currentSite == "/projects/muenster") {
+        this.showCurrentSite = "Ulmer Münster";
       } else if (this.currentSite == "/impressum") {
         this.showCurrentSite = "Impressum";
       } else if (this.currentSite == "/datenschutzerklaerung") {
@@ -127,9 +129,11 @@
         } else if (this.currentSite == "/projects/raumplaner") {
           this.showCurrentSite = "Raumplaner";
         } else if (this.currentSite == "/projects/unsichtbar") {
-          this.showCurrentSite = "Unsichtbares";
+          this.showCurrentSite = "(Un)sichtbar";
         } else if (this.currentSite == "/projects/appanalyse") {
           this.showCurrentSite = "Anwendungsanalyse";
+        } else if (this.currentSite == "/projects/muenster") {
+          this.showCurrentSite = "Ulmer Münster";
         } else if (this.currentSite == "/impressum") {
           this.showCurrentSite = "Impressum";
         } else if (this.currentSite == "/datenschutzerklaerung") {
@@ -178,9 +182,6 @@
 
   #navTopMenu {
     z-index: 10;
-
-    /* position: sticky;
-      position: -webkit-sticky; */
 
     width: 100%;
     height: 100%;

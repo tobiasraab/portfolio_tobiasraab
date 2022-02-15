@@ -13,12 +13,20 @@
         m-auto
       "
     >
-      <!--TODO: rename images seo friendly and add fill seo friendly altTags-->
+      <projectCard
+        :title="'Ulmer Münster'"
+        :label="'Ausstellungsgestaltung'"
+        :image="require('@/assets/images/muenster/ausstellungseinheit-thumbnail.jpg')"
+        :altTag="'Ulmer Münster Ausstellungseinheit'"
+        :description="'Interaktive Ausstellungseinheit über den Bau des Ulmer Münster.'"
+        :overlayId="'overlayId7'"
+        :linkedPath="'/projects/muenster'"
+      ></projectCard>
       <projectCard
         :title="'Wärmepumpe'"
         :label="'UX/UI Design'"
         :image="require('@/assets/images/waermepumpe/image4.png')"
-        :altTag="'lorem ipsum'"
+        :altTag="'Wärmepumpe Interface'"
         :description="'Dashboard, mit dessen Hilfe Hausbesitzer alle relevanten Daten über die Leistung ihrer Wärmepumpe einsehen können.'"
         :overlayId="'overlayId1'"
         :linkedPath="'/projects/waermepumpe'"
