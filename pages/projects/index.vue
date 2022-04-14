@@ -18,13 +18,13 @@
         :label="'Ausstellungsgestaltung'"
         :image="require('@/assets/images/muenster/ausstellungseinheit-thumbnail.jpg')"
         :altTag="'Ulmer Münster Ausstellungseinheit'"
-        :description="'Interaktive Ausstellungseinheit über den Bau des Ulmer Münster.'"
+        :description="'Interaktive Ausstellungseinheit, welche den Bau des Ulmer Münsters auf spielerische Weise veranschaulischt.'"
         :overlayId="'overlayId7'"
         :linkedPath="'/projects/muenster'"
       ></projectCard>
       <projectCard
         :title="'Wärmepumpe'"
-        :label="'UX/UI Design'"
+        :label="'UI Design'"
         :image="require('@/assets/images/waermepumpe/image4.png')"
         :altTag="'Wärmepumpe Interface'"
         :description="'Dashboard, mit dessen Hilfe Hausbesitzer alle relevanten Daten über die Leistung ihrer Wärmepumpe einsehen können.'"
@@ -49,7 +49,7 @@
       ></projectCard>
       <projectCard
         :title="'Raumplaner'"
-        :label="'UX/UI Design'"
+        :label="'UI Design'"
         :image="require('@/assets/images/raumplaner/raumplaner-title.jpg')"
         :description="' App, für die Buchung von Zeitslots in verschiedenen Räumen. Damit kann eine organisierte Nutzung von Hochschuleinrichtungen ermöglicht werden.'"
         :overlayId="'overlayId4'"
