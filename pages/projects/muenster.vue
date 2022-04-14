@@ -8,7 +8,7 @@
     <pictureText
       :headline="'Tangible Interface'"
       :imageSource="require('@/assets/images/muenster/ausstellungseinheit-thumbnail.jpg')"
-      :text="'Bei der gezeigten Ausstellungseinheit handelt es sich um eine interaktive Station, welche den Besuchern das Ulmer Münster und seinen Bau veranschaulicht. Hierfür wurde ein Tangible Interface gestaltet. Die Besucher können das Münster eigenständig Bauteil für Bauteil aufbauen. Dabei werden sie mit Informationen zu den jeweiligen Bauetappen versorgt.'"
+      :text="'Bei der gezeigten Ausstellungseinheit handelt es sich um eine interaktive Station, welche den Besuchern das Ulmer Münster und seinen Bau veranschaulicht. Hierfür wurde ein spezielles mehrstufiges Tangible Interface entwickelt. Die Besucher können das Münster eigenständig Schritt für Schritt aufbauen. Dabei werden sie mit Informationen zur jeweiligen Bauetappe versorgt.'"
       :imageCaption="''"
       :altTag="'Ausstellungseinheit Tangible Interface'"
     ></pictureText>
@@ -18,11 +18,16 @@
     ></videoTemplate>
     <textPicture
       :headline="'Prototyping'"
-      :imageSource="require('@/assets/images/muenster/ausstellungseinheit-ablage.jpg')"
-      :text="'Mittels Styrodur wurde ein erster Prototyp hergestellt, anhand dessen die Funktionalität und die Interaktion mit der Station getestet werden konnten. Hierbei entstand die Idee, die Teile des Münsters mit Widerstände zu versehen. Wenn ein Bauteil auf ein anderes gestellt wird, verbinden sich die Leitungen der einzelnen Bauteile miteinander. Die darin verbauten Widerstände werden in Reihe geschatlten, wodurch der Arduino messen kann, welche Teile im Model aufgebaut sind. Diese Information wird an das Frontend gesendet, welches dann auf den Baufortschritt reagieren kann. Ein an der Decke hängender Beamer projiziert das Interface auf den Tisch.<br><br>Die Vorteile, die durch einen Prototypen für den Prozess erziehlt werden, wurden in diesem Projekt wiedereinmal sehr deutlich und haben mich in meiner Arbeitsweise bestätigt. Allein durch Konzeption können meiner Meinung nach nicht so gute Ergebnisse erziehlt werden, als durch einem Prototypen, an dem getestet und gearbeitet wird.'"
+      :imageSource="require('@/assets/images/muenster/work-in-progress.jpg')"
+      :text="'Mittels Styrodur wurde ein erster Prototyp hergestellt, anhand dessen die Funktionalität und die Interaktion mit der Station getestet werden konnten. Hierbei entstand die Idee, die Bauteile des Münsters mit Widerständen zu versehen. Wenn ein Bauteil auf ein anderes gestellt wird, verbinden sich die Leitungen der einzelnen Bauteile miteinander. Dadurch werden die verbauten Widerstände parallel hinzugeschatlten. Ein Arduino erkennt nun anhand der veränderten Spannung, welche Teile im Model aufgebaut wurden. Diese Information wird an einen Raspberry Pi geschickt, welcher die Informationen auf dem Interface entsprechend anpasst. Das Interface wird von einem an der Decke hängenden Beamer auf den Tisch projiziert. Die Vorteile, die durch einen schnellen und frühen Prototypen für die weitere Gestaltung generiert werden können, wurden in diesem Projekt sehr deutlich.'"
       :imageCaption="''"
-      :altTag="'Ausstellungseinheit Teile Ablage'"
+      :altTag="'Work in progress'"
     ></textPicture>
+    <pictureItem
+      :imageSource="require('@/assets/images/muenster/ausstellungseinheit-ablage.jpg')"
+      :altTag="'Ausstellungseinheit Teile Ablage'"
+    >
+    </pictureItem>
   </div>
 </template>
 
