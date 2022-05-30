@@ -6,7 +6,7 @@
     <h3>Postanschrift:</h3>
     <p>Rechbergstraße 42<br>73525 Schwäbisch Gmünd<br></p>
     <h3>Kontakt:</h3>
-    <p>Telefon: +49 1575 4622232<br>E-Mail: tbs.raab@gmail.com</p>
+    <p>E-Mail: tbs.raab@gmail.com</p>
     <p></p>
     <p><br></p>
     <p></p>
