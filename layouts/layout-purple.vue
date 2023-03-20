@@ -1,7 +1,6 @@
 <template>
   <div class="layout-template">
     <navigationBar class="nav-bar" />
-    <!-- 0040A0  -->
     <Particles
       class="background-template"
       id="tsparticlesPurple"

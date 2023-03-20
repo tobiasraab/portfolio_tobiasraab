@@ -8,7 +8,7 @@
     <pictureText
       :headline="'Problem'"
       :imageSource="require('@/assets/images/hubi/question.png')"
-      :text="'Wie funktioniert Smart Home? Was passiert mit meinen Daten? Kann ich das als Leie überhaupt? Wie kann ich mein zuhause präzise und einfach automatisieren um mein Leben so zu vereinfachen, wie ich es möchte? <br><br>Das sind Fragen, die sich Menschen stellen, bevor sie sich ein Smart Home System aufbauen. Das Smart Home Kit HUBI bietet darauf die passende Lösung.'"
+      :text="'Wie funktioniert Smart Home? Was passiert mit meinen Daten? Kann ich das als Leie überhaupt? Wie kann ich mein Zuhause präzise und einfach automatisieren um mein Leben so zu vereinfachen, wie ich es möchte? <br><br>Das sind Fragen, die sich Menschen stellen, bevor sie sich ein Smart Home System aufbauen. Das Smart Home Kit HUBI bietet darauf die passende Lösung.'"
       :imageCaption="''"
       :altTag="'Fragezeichen'"
     ></pictureText>

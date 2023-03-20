@@ -51,6 +51,12 @@
         this.showCurrentSite = "Firewatch";
       } else if (this.currentSite == "/projects/raumplaner") {
         this.showCurrentSite = "Raumplaner";
+      } else if (this.currentSite == "/projects/unsichtbar") {
+        this.showCurrentSite = "(Un)sichtbar";
+      } else if (this.currentSite == "/projects/appanalyse") {
+        this.showCurrentSite = "Anwendungsanalyse";
+      } else if (this.currentSite == "/projects/muenster") {
+        this.showCurrentSite = "Ulmer Münster";
       } else if (this.currentSite == "/impressum") {
         this.showCurrentSite = "Impressum";
       } else if (this.currentSite == "/datenschutzerklaerung") {
@@ -87,11 +93,8 @@
     },
     methods: {
       sideMenu() {
-        var icon = document.getElementById("navMenuIconContainer");
-        var sideMenu = document.getElementById("navSideMenu");
-        var sideMenuLinkContainer = document.getElementById(
-          "navSideLinksContainer"
-        );
+        const icon = document.getElementById("navMenuIconContainer");
+        const sideMenu = document.getElementById("navSideMenu");
 
         if (this.navSideMenuActiv === false) {
           this.navSideMenuActiv = true;
@@ -125,12 +128,18 @@
           this.showCurrentSite = "Firewatch";
         } else if (this.currentSite == "/projects/raumplaner") {
           this.showCurrentSite = "Raumplaner";
+        } else if (this.currentSite == "/projects/unsichtbar") {
+          this.showCurrentSite = "(Un)sichtbar";
+        } else if (this.currentSite == "/projects/appanalyse") {
+          this.showCurrentSite = "Anwendungsanalyse";
+        } else if (this.currentSite == "/projects/muenster") {
+          this.showCurrentSite = "Ulmer Münster";
         } else if (this.currentSite == "/impressum") {
           this.showCurrentSite = "Impressum";
         } else if (this.currentSite == "/datenschutzerklaerung") {
           this.showCurrentSite = "Datenschutzerklärung";
         } else if (
-          this.urrentSite == "/projects" ||
+          this.currentSite == "/projects" ||
           "/about" ||
           "/contact" ||
           "/"
@@ -173,9 +182,6 @@
 
   #navTopMenu {
     z-index: 10;
-
-    /* position: sticky;
-      position: -webkit-sticky; */
 
     width: 100%;
     height: 100%;

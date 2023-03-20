@@ -30,5 +30,6 @@ div > h2 {
 }
 img {
   margin: auto;
+  width: 100%;
 }
 </style>
