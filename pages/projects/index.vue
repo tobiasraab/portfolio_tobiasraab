@@ -14,6 +14,15 @@
       "
     >
       <projectCard
+        :title="'Order Manager Industrie 4.0'"
+        :label="'UX/UI NAiSE GmbH'"
+        :image="require('@/assets/images/ordermanager/NAiSE-Order-Manager-mockup.jpg')"
+        :altTag="'NAiSE Order Manager auf Laptop Screen'"
+        :description="'Der NAiSE Order Manager bietet eine einfache und transparent Anlaufstelle für Prozesskoordinierung in der Intralogistik.'"
+        :overlayId="'overlayId8'"
+        :linkedPath="'/projects/ordermanager'"
+      ></projectCard>
+      <projectCard
         :title="'Ulmer Münster'"
         :label="'Ausstellungsgestaltung'"
         :image="require('@/assets/images/muenster/ausstellungseinheit-thumbnail.jpg')"
