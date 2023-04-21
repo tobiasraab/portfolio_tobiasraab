@@ -18,7 +18,7 @@
         :label="'UX/UI NAiSE GmbH'"
         :image="require('@/assets/images/ordermanager/NAiSE-Order-Manager-mockup.jpg')"
         :altTag="'NAiSE Order Manager auf Laptop Screen'"
-        :description="'Der NAiSE Order Manager bietet eine einfache und transparent Anlaufstelle für Prozesskoordinierung in der Intralogistik.'"
+        :description="'Der NAiSE Order Manager bietet eine einfache und transparente Anlaufstelle zur Auftragskoordinierung in der Intralogistik.'"
         :overlayId="'overlayId8'"
         :linkedPath="'/projects/ordermanager'"
       ></projectCard>
